@@ -1,0 +1,102 @@
+/*!
+ * Start Bootstrap - The Big Picture (http://startbootstrap.com/)
+ * Copyright 2013-2016 Start Bootstrap
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
+ */
+ @import 'https://fonts.googleapis.com/css?family=Karla';
+
+html {
+  font-family: "Karla";
+}
+
+body {
+	margin-top: 50px;
+	margin-bottom: 50px;
+	background: none;
+}
+
+.logo-banner {
+    display: block;
+    margin: 0 auto;
+}
+
+.full {
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+* {
+  box-sizing: border-box; }
+
+canvas {
+  position: absolute;
+  z-index: -1;
+  width: 0%;
+  height: 0%;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+}
+
+.navbar .navbar-nav {
+  display: inline-block;
+  float: none;
+  vertical-align: top;
+}
+
+a {
+  color: #9b0000;
+}
+
+a:hover {
+  color: #9b0000;
+}
+
+.navbar .navbar-collapse {
+  text-align: center;
+}
+
+.navbar {
+  background-color: none;
+}
+
+.banner {
+  position: absolute;
+  top: 50%;
+  left:50%;
+  transform: translate(-50%,-50%);
+}
+
+.name {
+  font-size: 15vw;
+  font-weight: 500;
+  color: #9b0000;
+}
+
+.tagline {
+  font-size: 5vw;
+}
+
+.info-bar {
+  text-decoration: underline;
+  color: #9b0000;
+}
+
+@media only screen and (min-width: 1000px) {
+  .name {
+    font-size: 3vw;
+  }
+  .tagline {
+    font-size: 1vw;
+  }
+  canvas {
+    height: 100%;
+    width: 100%;
+  }
+  .logo-banner {
+      width: 50%;
+  }
+}

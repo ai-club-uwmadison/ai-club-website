@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html class="full" lang="en">
+<!-- Make sure the <html> tag is set to the .full CSS class. Change the background image in the full.css file. -->
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>AI @ UW</title>
+
+    <link href="css/menu.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/ai-club.css" rel="stylesheet">
+
+</head>
+
+<canvas class='connecting-dots'>
+</canvas>
+
+<body>
+    <header class="main-header">
+        <ul class="menu">
+            <li class="menu__item"><a href="about.html">About</a></li>
+            <li class="menu__item"><a href="faq.html">FAQ</a></li>
+            <li class="menu__item"><a href="leadership.html">Leadership</a></li>
+            <li class="menu__item"><a href="roles.html">Member Roles</a></li>
+            <li class="menu__item" data-sub="projects"><a href="projects.html">Projects</a></li>
+            <li class="menu__item"><a href="https://calendar.google.com/calendar/embed?src=aiclubuwmadison%40gmail.com&ctz=America%2FChicago">Calendar</a></li>
+            <li class="menu__item"><a href="https://wisconsinai.slack.com/">Slack</a></li>
+            <li class="menu__item"><a href="mailto:aiclubuwmadison@gmail.com">Contact</a></li>
+
+        </ul>
+        <div class="dropdown-holder">
+            <div class="dropdown__arrow"></div>
+            <div class="dropdown__bg">
+                <div class="dropdown__bg-bottom"></div>
+            </div>
+            <div class="dropdown__wrap">
+                <div class="dropdown-menu" id="projects" data-sub="projects">
+                    <div class="dropdown-menu__content">
+                        <div class="top-section">
+                            <div class="col-2">
+                                <ul>
+                                    <li>
+                                        <a href="">
+                                            <h3>Payment</h3>
+                                            <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            <h3>Connect</h3>
+                                            <p> consectetur adipisicing elit nesciunt! Assumenda, adipisci.</p>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            <h3>Atlas</h3>
+                                            <p> ipsum dolor sit amet, consectetur adipisicing elit. .</p>
+                                        </a>
+                                    </li>
+                                </ul>
+                                <ul>
+                                    <li>
+                                        <a href="">
+                                            <h3>Subscription</h3>
+                                            <p> Lorem ipsum dolor sit amet, consectetur </p>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            <h3>Relay</h3>
+                                            <p> amet, consectetur adipisicing elit. Nisi, sequi!</p>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="bottom-section">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="banner">
+        <img class="img-responsive logo-banner" src="./images/logo_full.png" alt="Chania">
+    </div>
+
+    <!-- Background -->
+    <script src="js/background.js"></script>
+
+    <script src="js/menu.js"></script>
+		<script>
+			$(function() {
+				cbpHorizontalMenu.init();
+			});
+		</script>
+
+</body>
+
+</html>
