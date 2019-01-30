@@ -12,7 +12,7 @@ html {
 body {
 	margin-top: 50px;
 	margin-bottom: 50px;
-	background: none;
+	background-color: #F2F2F2;
 }
 
 .logo-banner {
@@ -31,7 +31,7 @@ body {
   box-sizing: border-box; }
 
 canvas {
-  position: absolute;
+  position: fixed;
   z-index: -1;
   width: 0%;
   height: 0%;
@@ -39,6 +39,11 @@ canvas {
   right: 0;
   left: 0;
   bottom: 0;
+  opacity:.5;
+}
+
+#canvasHome {
+  opacity: 1;
 }
 
 .navbar .navbar-nav {
@@ -99,4 +104,54 @@ a:hover {
   .logo-banner {
       width: 50%;
   }
+}
+
+h1 {
+  font-size: 100px;
+  text-align: center;
+  color: #fff;
+  line-height:0em;
+}
+h2 {
+  font-size: 30px;
+  text-align: center;
+  color: #CC918F;
+}
+h3 {
+  font-size: 20px;
+  text-align: center;
+  color: #9B0400;
+}
+p {
+  text-align: center;
+}
+
+.head {
+    z-index:1;
+    width: 70%;
+    background-color: #9B0400;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 200px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 20px;
+    padding-bottom: 40px;
+    margin-bottom: 0;
+}
+.main{
+  z-index:2;
+  width: 70%;
+  background-color: #fff;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: -40px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;  
 }
