@@ -3,10 +3,10 @@
  * Copyright 2013-2016 Start Bootstrap
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
  */
- @import 'https://fonts.googleapis.com/css?family=Karla';
+ @import url('https://fonts.googleapis.com/css?family=Heebo');
 
 html {
-  font-family: "Karla";
+  font-family: 'Heebo', sans-serif;
 }
 
 body {
@@ -140,18 +140,20 @@ p {
     padding-top: 20px;
     padding-bottom: 40px;
     margin-bottom: 0;
-}
-.main{
-  z-index:2;
-  width: 70%;
-  background-color: #fff;
-  border-bottom-left-radius: 10px;
-  border-bottom-right-radius: 10px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: -40px;
-  padding-left: 20px;
-  padding-right: 20px;
-  padding-top: 20px;
-  padding-bottom: 20px;  
-}
+    box-shadow: 0px -10px 155px -16px rgba(0,0,0,0.34);
+}  
+  .main{
+    z-index:2;
+    width: 70%;
+    background-color: #fff;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -40px;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 20px;
+    padding-bottom: 20px;  
+    box-shadow: 0px -10px 155px -16px rgba(0,0,0,0.34);
+  }
