@@ -682,8 +682,8 @@ section.work-cards article .content .image img {
 }
 
 section.work-cards article .content .image:before {
-    background-color: #2b9bdf;
-    background-image: linear-gradient(to bottom, #2b9bdf, #0bbdd7, #a8dbe9);
+    background-color: #9A0400;
+    background-image: linear-gradient(to bottom, #9A0400, #924442,  #C7807E);
     content: '';
     display: block;
     height: calc(145.7 * 1.22%);
@@ -818,7 +818,7 @@ main section.about-landing .leadership .pop {
 
 main section.about-landing .leadership-popups {
     position: fixed;
-    background-color: rgba(1, 158, 226, 0.8);
+    background-color: rgba(226, 16, 1, 0.2);
     z-index: 12;
     overflow: auto;
     overflow-y: scroll;
@@ -1029,7 +1029,7 @@ main section.about-landing .leadership-popups article .close .circle {
     height: 100%;
     width: 100%;
     position: relative;
-    background-color: #019ee3
+    background-color: #970400
 }
 
 main section.about-landing .leadership-popups article .close .circle svg {
