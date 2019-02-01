@@ -116,25 +116,24 @@
   display: block;
   padding: 20px 20px 10px;
 }
-#projects .col-2 li h3 {
+#projects .col-2 h3 {
+  font-size: 18px;
+  margin: 0 0 10px;
+  color: #FA7174;
+  text-align: left;
+}
+#projects .col-2 li {
   font-size: 18px;
   margin: 0 0 10px;
   color: #fff;
+  text-align: left;
 }
-#projects .col-2 li p {
-  color: #CC9290;
-  margin: 0;
+#projects .col-2 li:hover {
+  color: #270100;
+  text-align: left;
 }
-.menu-title {
-  margin: 0 0 10px;
-  font-size: 18px;
-  color: #fff;
-}
+
 .info {
   line-height: 1.7;
 }
 
-#menuLogo img{
-  width: 40px;
-  margin-top: -10px;
-}

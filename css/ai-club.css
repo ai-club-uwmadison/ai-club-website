@@ -56,10 +56,6 @@ a {
   color: #9b0000;
 }
 
-a:hover {
-  color: #9b0000;
-}
-
 .navbar .navbar-collapse {
   text-align: center;
 }
@@ -165,4 +161,8 @@ p {
   .tz-gallery .lightbox img {
   width: 100%;
   margin: 20px auto;
+}
+#menuLogo img{
+  width: 40px;
+  margin-top: -10px;
 }
