@@ -45,8 +45,12 @@ section.work-cards ul {
     background-color: #fff;
     float: left;
     left: 50%;
-    min-width: 0;
-    max-width: 100%;
+    min-width: 69.55vw;
+    max-width: 69.5vw;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    width: 100%;
+    top: -20px;
     position: relative
 }
 
