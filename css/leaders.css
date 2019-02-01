@@ -869,7 +869,7 @@ main section.about-landing .leadership-popups article .photo {
 
 main section.about-landing .leadership-popups article .photo img {
     width: 100%;
-    height: auto;
+    height: 500px;
     overflow: hidden
 }
 
@@ -1074,7 +1074,7 @@ main section.about-landing .leadership-popups article .description .close {
         display: block;
         margin-right: 2.3576520234%;
         width: 82.9403913294%;
-        height: 43.75rem;
+        height: 500px;
         position: relative
     }
     main section.about-landing .leadership-popups article>div:last-child {
