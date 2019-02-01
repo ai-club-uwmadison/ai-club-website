@@ -1,12 +1,7 @@
-/*!
- * Start Bootstrap - The Big Picture (http://startbootstrap.com/)
- * Copyright 2013-2016 Start Bootstrap
- * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
- */
- @import url('https://fonts.googleapis.com/css?family=Heebo');
 
+ @import url('https://fonts.googleapis.com/css?family=Muli');
 html {
-  font-family: 'Heebo', sans-serif;
+  font-family: 'Muli', sans-serif;
 }
 
 body {
