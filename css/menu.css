@@ -168,6 +168,7 @@
   line-height: 1.7;
 }
 
+/* side nav */ 
 .sidenav {
   height: 100%;
   width: 0;
@@ -175,7 +176,7 @@
   z-index: 1;
   top: 0;
   right: 0;
-  background-color: #111;
+  background-color: #9A0400;
   overflow-x: hidden;
   transition: 0.5s;
   padding-top: 60px;
@@ -185,9 +186,14 @@
   padding: 8px 8px 8px 32px;
   text-decoration: none;
   font-size: 25px;
-  color: #818181;
+  color: #fff;
   display: block;
   transition: 0.3s;
+}
+
+.sidenav ul {
+  list-style-type: none;
+  padding-left: 0px;
 }
 
 .sidenav a:hover {
@@ -205,4 +211,9 @@
 @media screen and (max-height: 450px) {
   .sidenav {padding-top: 15px;}
   .sidenav a {font-size: 18px;}
+}
+
+#navSubMenu a {
+  font-size: 20px;
+  padding-left: 50px;
 }

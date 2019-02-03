@@ -27,27 +27,35 @@
 
 <body>
     <header id="head" class="main-header">
-        <ul class="menu">
-            <li class="menu__item"><a href="about.html">About</a></li>
-            <li class="menu__item"><a href="faq.html">FAQ</a></li>
-            <li class="menu__item"><a href="leadership.html">Leaders</a></li>
-            <li class="menu__item"><a href="roles.html">Member Roles</a></li>
-            <li class="menu_item" id="menuLogo"><a href="index.html"><img src="images/logo.png"></a></li>
-            <li class="menu__item" data-sub="projects"><a href="projects.html">Projects</a></li>
-            <li class="menu__item"><a href="https://calendar.google.com/calendar/embed?src=aiclubuwmadison%40gmail.com&ctz=America%2FChicago">Calendar</a></li>
-            <li class="menu__item"><a href="https://wisconsinai.slack.com/">Slack</a></li>
-            <li class="menu__item"><a href="mailto:aiclubuwmadison@gmail.com">Contact</a></li>
-        </ul>
-        <div class="dropdown-holder">
-            <div class="dropdown__arrow"></div>
-            <div class="dropdown__bg">
-                <div class="dropdown__bg-bottom"></div>
-            </div>
-            <div class="dropdown__wrap">
-                <div class="dropdown-menu" id="projects" data-sub="projects">
-                    <div class="dropdown-menu__content">
-                        <div class="top-section">
-                            <div class="col-2">
+            <!-- main menu-->
+            <ul class="menuLarge">
+                <li class="menu__item"><a href="about.html">About</a></li>
+                <li class="menu__item"><a href="faq.html">FAQ</a></li>
+                <li class="menu__item"><a href="leadership.html">Leaders</a></li>
+                <li class="menu__item"><a href="roles.html">Member Roles</a></li>
+                <li class="menu_item" id="menuLogo"><a href="index.html"><img src="images/logo.png"></a></li>
+                <li class="menu__item" data-sub="projects"><a href="projects.html">Projects</a></li>
+                <li class="menu__item"><a href="https://calendar.google.com/calendar/embed?src=aiclubuwmadison%40gmail.com&ctz=America%2FChicago">Calendar</a></li>
+                <li class="menu__item"><a href="https://wisconsinai.slack.com/">Slack</a></li>
+                <li class="menu__item"><a href="mailto:aiclubuwmadison@gmail.com">Contact</a></li>
+    
+            </ul>
+            <!-- mobile freindly menu-->
+            <ul class="menuSmall">
+                <li class="menu_item" id="menuLogo"><a href="index.html"><img src="images/logo.png"></a></li>
+                    <li class="menu_item" id="openMenu"><span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span></li>
+            </ul>
+            <!-- menu dropdown-->
+            <div class="dropdown-holder">
+                <div class="dropdown__arrow"></div>
+                <div class="dropdown__bg">
+                    <div class="dropdown__bg-bottom"></div>
+                </div>
+                <div class="dropdown__wrap">
+                    <div class="dropdown-menu" id="projects" data-sub="projects">
+                        <div class="dropdown-menu__content">
+                            <div class="top-section">
+                                <div class="col-2">
                                     <ul>
                                         <li>
                                             <h3 class="dropdownTitle">Active Engineering Teams</h3>
@@ -77,15 +85,15 @@
                                             </ul>                                    
                                         </li>
                                     </ul>
+                                </div>
                             </div>
-                        </div>
-                        <div class="bottom-section">
+                            <div class="bottom-section">
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </header>
+        </header>
     <div class="head"><h1>Leadership</h1>
         <h2>Learn More About AI@UW's Leadership Team</h2>
     </div>
@@ -1039,9 +1047,8 @@
 
     <!-- Background -->
     <script src="js/background.js"></script>
-
     <script src="js/menu.js"></script>
-
+    <script src="js/sideNav.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
     <script src="js/modernizr.custom.js"></script>
     <script type="text/javascript" src="https://d16w1lcoeot4ot.cloudfront.net/static/01112019181351/js/908a625b2b37.js"></script>
