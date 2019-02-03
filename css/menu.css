@@ -48,6 +48,11 @@
     text-decoration: none;
     color: #9B0400;
   }
+  .menuSmall span {
+    font-size:30px;
+    cursor:pointer
+  }
+
   .menuSmall a:hover {
     color: #270100;
     }
