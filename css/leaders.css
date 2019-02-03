@@ -655,7 +655,7 @@ section.work-cards article .content {
     position: absolute;
     top: 39%;
     width: 70%;
-    z-index: 1
+    z-index: 3
 }
 
 section.work-cards article .content .image {
@@ -670,7 +670,7 @@ section.work-cards article .content .image {
     transform: translate3d(0, 0, 0);
     -webkit-backface-visibility: hidden;
     -webkit-mask-image: -webkit-radial-gradient(circle, white 100%, black 100%);
-    z-index: 1
+    z-index: 3
 }
 
 section.work-cards article .content .image img {
@@ -682,7 +682,7 @@ section.work-cards article .content .image img {
     position: absolute;
     top: 70%;
     width: auto;
-    z-index: 1
+    z-index: 3
 }
 
 section.work-cards article .content .image:before {
