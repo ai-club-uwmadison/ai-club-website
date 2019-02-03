@@ -4,6 +4,15 @@ html {
   font-family: 'Muli', sans-serif;
 }
 
+h3 { 
+  position:relative; 
+  z-index: 0;
+}
+h3 span { 
+  position:absolute; 
+  top:-70px;
+}
+
 body {
 	margin-top: 50px;
 	margin-bottom: 50px;
