@@ -24,7 +24,7 @@
 
 <body>
     <header id="head" class="main-header">
-        <ul class="menu">
+        <ul class="menuLarge">
             <li class="menu__item"><a href="about.html">About</a></li>
             <li class="menu__item"><a href="faq.html">FAQ</a></li>
             <li class="menu__item"><a href="leadership.html">Leaders</a></li>
@@ -36,6 +36,13 @@
             <li class="menu__item"><a href="mailto:aiclubuwmadison@gmail.com">Contact</a></li>
 
         </ul>
+        <ul class="menuSmall">
+
+                <li class="menu_item" id="menuLogo"><a href="index.html"><img src="images/logo.png"></a></li>
+                
+                <li class="menu_item" id="openMenu"><span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span></li>
+    
+            </ul>
         <div class="dropdown-holder">
             <div class="dropdown__arrow"></div>
             <div class="dropdown__bg">
@@ -84,6 +91,13 @@
             </div>
         </div>
     </header>
+    <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="#">About</a>
+            <a href="#">Services</a>
+            <a href="#">Clients</a>
+            <a href="#">Contact</a>
+          </div>
 
     <div class="banner">
         <img class="img-responsive logo-banner" src="./images/logo_full.png" alt="Chania">
@@ -93,11 +107,15 @@
     <script src="js/background.js"></script>
 
     <script src="js/menu.js"></script>
-		<script>
-			$(function() {
-				cbpHorizontalMenu.init();
-			});
-		</script>
+    <script>
+            function openNav() {
+              document.getElementById("mySidenav").style.width = "250px";
+            }
+            
+            function closeNav() {
+              document.getElementById("mySidenav").style.width = "0";
+            }
+            </script>
 
 </body>
 
