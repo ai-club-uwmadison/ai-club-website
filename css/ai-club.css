@@ -2,6 +2,7 @@
  @import url('https://fonts.googleapis.com/css?family=Muli');
 html {
   font-family: 'Muli', sans-serif;
+  zoom: 110%;
 }
 html { /* smooth scrolling */
   scroll-behavior: smooth;
