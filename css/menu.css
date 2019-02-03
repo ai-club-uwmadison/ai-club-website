@@ -1,4 +1,4 @@
-
+/* styling for fixed banner */
 #head {
   position: fixed;
   padding:  0 0;
@@ -13,6 +13,7 @@
   box-shadow: 0px 4px 60px -5px rgba(0,0,0,0.53);
 }
 
+/* large screen menu styling */
 @media screen and (min-width: 1080px) {
   .menuLarge {
     list-style: none;
@@ -38,6 +39,7 @@
   }
 }
 
+/* small screen menu stylinh */
 @media screen and (max-width: 1080px) {
   .menuSmall {
     list-style: none;
@@ -72,6 +74,7 @@
   }
 }
 
+/* dropdown styling (for large screens */
 .menu__item {
   position: relative;
 }
@@ -174,12 +177,17 @@
   color: #270100;
   text-align: left;
 }
-
 .info {
   line-height: 1.7;
 }
 
-/* side nav */ 
+/* logo in menu styling */
+#menuLogo img{
+  width: 40px;
+  margin-top: -10px;
+}
+
+/* side nav (for small screens)*/ 
 .sidenav {
   height: 100%;
   width: 0;

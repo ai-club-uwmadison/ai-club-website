@@ -1,20 +1,10 @@
+/* Importing Muli font */
+@import url('https://fonts.googleapis.com/css?family=Muli');
 
- @import url('https://fonts.googleapis.com/css?family=Muli');
+/* Basic styles */
 html {
   font-family: 'Muli', sans-serif;
   zoom: 110%;
-}
-html { /* smooth scrolling */
-  scroll-behavior: smooth;
-}
-
-h3 { /* header ofset for scrolling */ 
-  position:relative; 
-  z-index: 0;
-}
-h3 span { 
-  position:absolute; 
-  top:-70px;
 }
 
 body {
@@ -38,6 +28,7 @@ body {
 * {
   box-sizing: border-box; }
 
+/* Canvas Dot Styling */
 canvas {
   position: fixed;
   z-index: -1;
@@ -64,14 +55,7 @@ a {
   color: #9b0000;
 }
 
-.navbar .navbar-collapse {
-  text-align: center;
-}
-
-.navbar {
-  background-color: none;
-}
-
+/* centered image */
 .banner {
   position: absolute;
   top: 50%;
@@ -79,21 +63,22 @@ a {
   transform: translate(-50%,-50%);
 }
 
-.name {
-  font-size: 15vw;
-  font-weight: 500;
-  color: #9b0000;
+/* smooth scrolling */
+html {
+  scroll-behavior: smooth;
 }
 
-.tagline {
-  font-size: 5vw;
+/* header ofset for scrolling */ 
+h3 { 
+  position:relative; 
+  z-index: 0;
+}
+h3 span { 
+  position:absolute; 
+  top:-70px;
 }
 
-.info-bar {
-  text-decoration: underline;
-  color: #9b0000;
-}
-
+/* disbles canvas on smaller screens */
 @media only screen and (min-width: 1000px) {
   .name {
     font-size: 3vw;
@@ -107,6 +92,7 @@ a {
   }
 }
 
+/* font styles */
 h1 {
   font-size: 100px;
   text-align: center;
@@ -126,11 +112,14 @@ h3 {
 p {
   text-align: left;
 }
-
- #faq p {
+#faq p {
    text-align: center;
  }
+a {
+  color: #9b0000;
+}
 
+ /* body head and main styles for generic pages */
 .head {
     z-index:1;
     width: 70%;
@@ -163,11 +152,8 @@ p {
     box-shadow: 0px -10px 155px -16px rgba(0,0,0,0.34);
   }
 
-  .tz-gallery .lightbox img {
+/* about page gallery stlying */
+.tz-gallery .lightbox img {
   width: 100%;
   margin: 20px auto;
-}
-#menuLogo img{
-  width: 40px;
-  margin-top: -10px;
 }
