@@ -33,6 +33,9 @@
   .menuSmall {
     display: none;
   }
+  .logo-banner {
+    width: 50%;
+  }
 }
 
 @media screen and (max-width: 1080px) {
@@ -63,6 +66,9 @@
   }
   .menuLarge {
     display: none;
+  }
+  .logo-banner {
+    width: 100%;
   }
 }
 
