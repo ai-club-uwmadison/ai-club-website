@@ -45,11 +45,21 @@ section.work-cards ul {
     background-color: #fff;
     float: left;
     left: 50%;
-    width: 69.15vw;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
     top: -20px;
     position: relative
+}
+/* width responsive styling */
+@media only screen and (min-width: 700px) {
+    section.work-cards ul {
+        width: 69.5vw;
+    }
+}
+@media only screen and (max-width: 700px) {
+    section.work-cards ul {
+        width: 100vw;
+    }
 }
 section.work-cards.leaders-list ul li {
     width: 300px
