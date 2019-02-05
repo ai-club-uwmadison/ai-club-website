@@ -8,6 +8,17 @@ The official page for UW-Madison's Aritifical Intelligence club!
 
 ## Website Technologies
 
+1. **[Google Fonts](https://fonts.google.com/)**
+
+	* [Muli](https://fonts.google.com/specimen/Muli)
+
+2. **[Font Awesome Icons](https://fontawesome.com/v4.7.0/icons/)**
+
+3. **[Raven.js - Sentry SDK for JavaScript)](https://www.npmjs.com/package/raven-js)**
 
 
 ## Server and Hosting
+The website is hosted on a Computer Sciences department VM off ESXi hypervisor that is serving the site using apache. If there are issues with the server contact Liam Mahoney or Luke Houge.
+1. **[Ubuntu Server 18.04.1 LTS](https://www.ubuntu.com/download/server)**
+
+2. **[Node.js](https://nodejs.org/en/about/)**
