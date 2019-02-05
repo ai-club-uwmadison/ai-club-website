@@ -14,7 +14,7 @@ The official page for UW-Madison's Aritifical Intelligence club!
 
 2. **[Font Awesome Icons](https://fontawesome.com/v4.7.0/icons/)**
 
-3. **[Raven.js - Sentry SDK for JavaScript)](https://www.npmjs.com/package/raven-js)**
+3. **[Raven.js - Sentry SDK for JavaScript](https://www.npmjs.com/package/raven-js)**
 
 
 ## Server and Hosting
