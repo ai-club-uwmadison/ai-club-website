@@ -53,7 +53,7 @@ section.work-cards ul {
 /* width responsive styling */
 @media only screen and (min-width: 700px) {
     section.work-cards ul {
-        width: 69.5vw;
+        width: 152.1%;
     }
 }
 @media only screen and (max-width: 700px) {
