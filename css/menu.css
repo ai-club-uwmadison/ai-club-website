@@ -186,6 +186,10 @@
   width: 40px;
   margin-top: -10px;
 }
+#menuLogoMobile img {
+  width: 40px;
+  margin-top: -10px;
+}
 
 /* side nav (for small screens)*/ 
 .sidenav {
