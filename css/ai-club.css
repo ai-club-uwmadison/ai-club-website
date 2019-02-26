@@ -191,4 +191,5 @@ a {
   flex-wrap: wrap;
   flex-direction: row;
   justify-content: space-around;
+  padding-bottom: 20px;
 }
