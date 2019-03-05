@@ -195,11 +195,21 @@ a {
 }
 
 /* seminars page styling */
+<<<<<<< HEAD
+  .key {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    margin-top: 10px;
+  }
+
+=======
 .key {
   display: flex;
   justify-content: center;
   margin-top: 30px;
 }
+>>>>>>> 801fcd01d7262e6908cab238cfd743741f263792
 .key h4 {
   font-size: 25px;
   text-align: center;
@@ -334,18 +344,29 @@ a {
 }
 
  /* body head and main styles for seminar page */
+ .seminarMain{
+  z-index:2;
+  background-color: #fff;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: -40px;
+  padding-top: 20px;
+  padding-bottom: 40px;  
+  box-shadow: 0px -10px 155px -16px rgba(0,0,0,0.34);
+}
+ @media only screen and (min-width: 700px) {
   .seminarMain{
-    z-index:2;
     width: 70%;
-    background-color: #fff;
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: -40px;
     padding-left: 4%;
     padding-right: 4%;
-    padding-top: 20px;
-    padding-bottom: 40px;  
-    box-shadow: 0px -10px 155px -16px rgba(0,0,0,0.34);
   }
+}
+@media only screen and (max-width: 700px) {
+  .seminarMain{
+    width: 100%;
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+}
