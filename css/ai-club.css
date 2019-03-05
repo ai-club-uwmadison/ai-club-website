@@ -177,7 +177,7 @@ a {
     padding-left: 12%;
     padding-right: 12%;
     padding-top: 20px;
-    padding-bottom: 20px;  
+    padding-bottom: 40px;  
     box-shadow: 0px -10px 155px -16px rgba(0,0,0,0.34);
   }
 }
@@ -193,3 +193,159 @@ a {
   justify-content: space-around;
   padding-bottom: 20px;
 }
+
+/* seminars page styling */
+.key {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+.key h4 {
+  font-size: 25px;
+  text-align: center;
+  padding: 10px;
+}
+.keyBox {
+  width: 140px;
+  height: 140px;
+  border-radius: 10px;
+  margin: 20px;
+  color: white;
+}
+#research {
+  background-color: #C48F65;
+}
+#society {
+  background-color: #005960;
+}
+#applied {
+  background-color:#BE9EC9;
+}
+
+
+.wrapper {
+  display: flex;  
+  flex-flow: row wrap;
+  font-weight: bold;
+  text-align: center;
+}
+
+.seminarContainer {
+  display: flex;  
+  flex-flow: row wrap;
+  font-weight: bold;
+  text-align: center;
+  color: white;
+}
+.seminarContainer > * {
+  padding: 10px;
+  flex: 1 100%;
+}
+.seminarContainer h4{
+  color: black;
+}
+
+.seminarDate {
+  min-width: 40px;
+  display: flex;
+  margin-bottom: -20px;
+  margin-top: 40px;
+}
+.seminarDate h2, h4{
+  text-align: left;
+}
+.seminarDate h4{
+  padding-left: 20px;
+  padding-top: 15px;
+}
+
+@media only screen and (max-width: 1300px) {
+  .seminarDetails {
+    background-color: #9B0400;
+    min-height: 150px;
+    flex-grow: 4;
+    padding: 10px;
+    height: 100%;
+    z-index: 0;
+    border-radius: 10px 10px 0px 0px;
+  }
+}
+@media only screen and (min-width: 1300px) {
+  .seminarDetails {
+    background-color: #9B0400;
+    min-height: 150px;
+    flex-grow: 4;
+    padding: 10px;
+    z-index: 0 ;
+    border-radius: 0px 0px 0px 0px;
+  }
+}
+.seminarDetails h3 {
+  text-align: left;
+  color: white;
+}
+
+@media only screen and (max-width: 1300px) {
+  .seminarCategory {
+    max-width: 50%;
+    height: 30vh;
+    border-radius: 0px 0px 0px 10px;
+    z-index: 0;
+  }
+}
+@media only screen and (min-width: 1300px) {
+  .seminarCategory {
+    max-width: 5%;
+    border-radius: 10px 0px 0px 10px; 
+  }
+}
+
+@media only screen and (max-width: 1300px) {
+  .seminarSpeakerImage {
+    max-width: 50%;
+  }
+  .seminarSpeakerImage img {
+    width: calc(100% + 24px); /* weird 10px padding bug, fix when time */
+    height: 30vh;
+    border-radius: 0px 0px 10px 0px;
+    margin-left: -14px;  /* weird 10px padding bug, fix when time */
+    margin-top: -10px; /* weird 10px padding bug, fix when time */
+    z-index: 10; /* weird 10px padding bug, fix when time */
+  }
+}
+@media only screen and (min-width: 1300px) {
+  .seminarSpeakerImage {
+    max-width: 30%;
+    margin-left: -10px; /* weird 10px padding bug, fix when time */
+    margin-top: -10px; /* weird 10px padding bug, fix when time */
+  }
+  .seminarSpeakerImage img {
+    width: 100%;
+    height: calc(100% + 10px); /* weird 10px padding bug, fix when time */
+    border-radius: 0px 10px 10px 0px;
+  }
+}
+
+@media all and (min-width: 1300px ) {
+  .seminarDetails    { flex: 3 0px; }
+  .seminarCategory { order: 1; } 
+  .seminarDetails    { order: 2; }
+  .seminarSpeakerImage{ order: 3; }
+}
+
+ /* body head and main styles for seminar page */
+  .seminarMain{
+    z-index:2;
+    width: 70%;
+    background-color: #fff;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -40px;
+    padding-left: 4%;
+    padding-right: 4%;
+    padding-top: 20px;
+    padding-bottom: 40px;  
+    box-shadow: 0px -10px 155px -16px rgba(0,0,0,0.34);
+  }

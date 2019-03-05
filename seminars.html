@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html class="full" lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="AI Club UW Madison" />
+    <meta name="keywords" content="ai, uw, ai-uw, aiwu, ai@uw, madison, artificialintelligence" />
+    <meta name="author" content="Luke Houge" />
+    <link rel="shortcut icon" href="images/logo.png">
+    <meta property="og:title" content="AI @ UW" />
+    <meta property="og:image" content="images/logo_full_og.png" />
+
+    <title>AI @ UW- Seminars</title>
+
+    <!-- Custom CSS -->
+    <link href="css/ai-club.css" rel="stylesheet">
+    <link href="css/leaders.css" rel="stylesheet">
+    <link href="css/menu.css" rel="stylesheet">
+
+</head>
+
+<!-- dots canvas-->
+<canvas class='connecting-dots'>
+</canvas>
+
+<body>
+    <!-- menu banner-->
+    <header id="head" class="main-header">
+        <!-- main menu-->
+        <ul class="menuLarge">
+          <li class="menu__item"><a href="about.html">About</a></li>
+          <li class="menu__item"><a href="faq.html">FAQ</a></li>
+          <li class="menu__item"><a href="leadership.html">Leaders</a></li>
+          <li class="menu__item"><a href="roles.html">Member Roles</a></li>
+          <li class="menu_item" id="menuLogo"><a href="index.html"><img src="images/logo.png" alt="AI@UW Logo"></a>
+            <p style="display:none">AI@UW Logo</p>
+          </li>
+          <li class="menu__item" data-sub="projects"><a href="projects.html">Projects</a></li>
+          <li class="menu__item"><a href="calendar.html">Calendar</a></li>
+          <li class="menu__item"><a href="https://wisconsinai.slack.com/">Slack</a></li>
+          <li class="menu__item"><a href="mailto:aiclubuwmadison@gmail.com">Contact</a></li>
+        
+        </ul>
+        <!-- mobile freindly menu-->
+        <ul class="menuSmall">
+            <li class="menu_item" id="menuLogoMobile"><a href="index.html"><img src="images/logo.png" alt="AI@UW Logo"><p style="display:none">AI@UW Logo</p></a></li>
+                <li class="menu_item" id="openMenu"><span  onclick="openNav()">&#9776;</span></li>
+        </ul>
+        <!-- menu dropdown-->
+        <div class="dropdown-holder">
+            <div class="dropdown__arrow"></div>
+            <div class="dropdown__bg">
+                <div class="dropdown__bg-bottom"></div>
+            </div>
+            <div class="dropdown__wrap">
+                <div class="dropdown-menu" id="projects" data-sub="projects">
+                    <div class="dropdown-menu__content">
+                        <div class="top-section">
+                            <div class="col-2">
+                                <ul>
+                                    <li>
+                                        <h3 class="dropdownTitle">Active Engineering Teams</h3>
+                                        <ul>
+                                            <li><a href="projects.html#att">Algorithmic Trading Team</a></li>
+                                            <li><a href="projects.html#lsct">Learning Source Code Team</a></li>
+                                        </ul>
+                                    </li>
+                                    
+                                </ul>
+                                <ul>
+                                    <li>
+                                        <h3 class="dropdownTitle">3rd-Party Engineering Opportunities</h3>
+                                        <ul>
+                                            <li><a href="projects.html#um">Universal Makeup</a></li>
+                                        </ul>                                 
+                                        </li>
+                                    <li>
+                                        <h3 class="dropdownTitle">Active Study Groups</h3>
+                                        <ul>
+                                            <li><a href="projects.html#ml">Machine Learning</a></li>
+                                            <li><a href="projects.html#niagi">Neuro-Inspired Artificial General Intelligence</a></li>
+                                        </ul>                                    
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="bottom-section">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+  <!-- mobile freindly side menu-->
+  <div id="mySidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <ul>
+      <li class="menu__item"><a href="about.html">About</a></li>
+      <li class="menu__item"><a href="faq.html">FAQ</a></li>
+      <li class="menu__item"><a href="leadership.html">Leaders</a></li>
+      <li class="menu__item"><a href="roles.html">Member Roles</a></li>
+      <li class="menu__item"><a href="projects.html">Projects</a></li>
+      <li class="menu__item"><a href="projects.html">Projects</a>
+        <ul id="navSubMenu">
+          <li><a href="projects.html#att">Algorithmic Trading Team</a></li>
+          <li><a href="projects.html#lsct">Learning Source Code Team</a></li>
+          <li><a href="projects.html#um">Universal Makeup</a></li>
+          <li><a href="projects.html#ml">Machine Learning</a></li>
+          <li><a href="projects.html#niagi">Neuro-Inspired Artificial General Intelligence</a></li>
+        </ul>
+      </li>
+      <li class="menu__item"><a
+          href="https://calendar.google.com/calendar/embed?src=aiclubuwmadison%40gmail.com&ctz=America%2FChicago">Calendar</a>
+      </li>
+      <li class="menu__item"><a href="https://wisconsinai.slack.com/">Slack</a></li>
+      <li class="menu__item"><a href="mailto:aiclubuwmadison@gmail.com">Contact</a></li>
+    </ul>
+  </div>
+
+    <!-- header -->
+    <div class="head"><h1>Seminars</h1>
+        <h2>AI@UW hosts various seminars througout the semester. Learn about the speakers and abstracts of their respective talks!</h2>
+    </div>
+
+    <!-- main content -->
+    <div class="seminarMain">
+        <h3>Seminar Category Color Key:</h3>
+        <div class="key">
+            <div class="keyBox" id="research"><h4>AI Research</h4></div>
+            <div class="keyBox" id="society"><h4>AI & Society</h4></div>
+            <div class="keyBox" id="applied"><h4>Applied AI</h4></div>
+        </div>
+        <div class="seminarContainer">
+            <header class="seminarDate">
+                <h2>February 20th</h2>
+                <h4>6:30-7:30pm</h4>
+            </header>
+            <article class="seminarDetails">
+                <h3>Matthew Banks- Great Expectations: The Neurobiology of Predictive Processing</h3>
+                <p>We bring expectations to every moment of experience, and those expectations color how that experience unfolds. How does that happen in the brain? Evidence suggests that brains implement predictive processing schemes, making use of neural circuitry to implement predictive coding in the service of efficiency. Yet the evidence is largely circumstantial, and fundamental questions remain open. I will present some of the evidence from my lab and others' for predictive processing in the brain, and show how we are exploring the relationship between predictive processing and consciousness.</p>
+            </article>
+            <aside class="seminarCategory" id="research"></aside>
+            <aside class="seminarSpeakerImage">
+                <img src="images/seminarSpeakers/matthewBanks.jpg"></img>
+            </aside>
+        </div>
+        <div class="seminarContainer">
+            <header class="seminarDate">
+                <h2>March 13th</h2>
+                <h4>6:30-7:30pm</h4>
+            </header>
+            <article class="seminarDetails">
+                <h3>Bill Hibbard- Coming of Age with AI</h3>
+                <p>Technology changes constantly and rapidly. A technology career requires lifelong learning. Constant change enables new uses of technology and career opportunities for those who develop those uses. Recently computers have become powerful enough to make artificial neural networks useful, enabling many new applications. AI and automation are transforming labor markets, AI is transforming medicine, warfare and other fields, and AI connected via the Internet to billions of people is transforming society. There is a good chance of reaching human-level AI, and beyond, within the next few decades, which will greatly accelerate these transformations. AI students in 2019 will be part of these transformations and will be at the center of the political storm they create. AI developers will need a clear understanding of what they value to weather the storm. This will be a short talk followed by a longer open discussion.</p>
+            </article>
+            <aside class="seminarCategory" id="society"></aside>
+            <aside class="seminarSpeakerImage">
+                <img src="images/seminarSpeakers/billHibbard.jpg"></img>
+            </aside>
+        </div>
+        <div class="seminarContainer">
+            <header class="seminarDate">
+                <h2>April 10th</h2>
+                <h4>6:30-7:30pm</h4>
+            </header>
+            <article class="seminarDetails">
+                <h3>Joe Austerweil- TBA</h3>
+                <p>TBA</p>
+            </article>
+            <aside class="seminarCategory" id="research"></aside>
+            <aside class="seminarSpeakerImage">
+                <img src="images/seminarSpeakers/josephAusterweil.jpg"></img>
+            </aside>
+        </div>
+        <div class="seminarContainer">
+            <header class="seminarDate">
+                <h2>May 1/2</h2>
+                <h4>6:30-7:30pm</h4>
+            </header>
+            <article class="seminarDetails">
+                <h3>Chris Endemann- The Intersection of Neuroscience & AI</h3>
+                <p>TBA</p>
+            </article>
+            <aside class="seminarCategory" id="research"></aside>
+            <aside class="seminarSpeakerImage">
+                <img src="images/seminarSpeakers/chris.jpg"></img>
+            </aside>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="js/background.js"></script>
+    <script src="js/menu.js"></script>
+    <script src="js/sideNav.js"></script>
+
+
+</body>
+
+</html>
