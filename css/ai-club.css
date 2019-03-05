@@ -248,6 +248,8 @@ a {
 .seminarDate {
   min-width: 40px;
   display: flex;
+  margin-bottom: -20px;
+  margin-top: 40px;
 }
 .seminarDate h2, h4{
   text-align: left;
