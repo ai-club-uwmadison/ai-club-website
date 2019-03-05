@@ -213,7 +213,7 @@ a {
   color: white;
 }
 #research {
-  background-color: #92B558;
+  background-color: #C48F65;
 }
 #society {
   background-color: #005960;
@@ -257,37 +257,74 @@ a {
   padding-top: 15px;
 }
 
-.seminarDetails {
-  background-color: #9B0400;
-  min-height: 150px;
-  flex-grow: 4;
-  padding: 10px;
-  height: 100%;
+@media only screen and (max-width: 1300px) {
+  .seminarDetails {
+    background-color: #9B0400;
+    min-height: 150px;
+    flex-grow: 4;
+    padding: 10px;
+    height: 100%;
+    z-index: 0;
+    border-radius: 10px 10px 0px 0px;
+  }
+}
+@media only screen and (min-width: 1300px) {
+  .seminarDetails {
+    background-color: #9B0400;
+    min-height: 150px;
+    flex-grow: 4;
+    padding: 10px;
+    z-index: 0 ;
+    border-radius: 0px 0px 0px 0px;
+  }
 }
 .seminarDetails h3 {
   text-align: left;
   color: white;
 }
 
-.seminarCategory {
-  height: 100px;
-  max-width: 15%;
-  border-radius: 10px 0px 0px 10px; /* delete this when get acutal images */
+@media only screen and (max-width: 1300px) {
+  .seminarCategory {
+    max-width: 50%;
+    height: 30vh;
+    border-radius: 0px 0px 0px 10px;
+    z-index: 0;
+  }
+}
+@media only screen and (min-width: 1300px) {
+  .seminarCategory {
+    max-width: 5%;
+    border-radius: 10px 0px 0px 10px; 
+  }
 }
 
-.seminarSpeakerImage {
-  max-width: 15%;
+@media only screen and (max-width: 1300px) {
+  .seminarSpeakerImage {
+    max-width: 50%;
+  }
+  .seminarSpeakerImage img {
+    width: calc(100% + 24px); /* weird 10px padding bug, fix when time */
+    height: 30vh;
+    border-radius: 0px 0px 10px 0px;
+    margin-left: -14px;  /* weird 10px padding bug, fix when time */
+    margin-top: -10px; /* weird 10px padding bug, fix when time */
+    z-index: 10; /* weird 10px padding bug, fix when time */
+  }
 }
-.seminarSpeakerImage img {
-  width: 100%;
-  height: 100px;
-  border-radius: 0px 10px 10px 0px;
+@media only screen and (min-width: 1300px) {
+  .seminarSpeakerImage {
+    max-width: 30%;
+    margin-left: -10px; /* weird 10px padding bug, fix when time */
+    margin-top: -10px; /* weird 10px padding bug, fix when time */
+  }
+  .seminarSpeakerImage img {
+    width: 100%;
+    height: calc(100% + 10px); /* weird 10px padding bug, fix when time */
+    border-radius: 0px 10px 10px 0px;
+  }
 }
 
-@media all and (min-width: 600px) {
-  .aside { flex: 1 0 0; }
-}
-@media all and (min-width: 800px) {
+@media all and (min-width: 1300px ) {
   .seminarDetails    { flex: 3 0px; }
   .seminarCategory { order: 1; } 
   .seminarDetails    { order: 2; }
@@ -310,4 +347,3 @@ a {
     padding-bottom: 40px;  
     box-shadow: 0px -10px 155px -16px rgba(0,0,0,0.34);
   }
-} 
