@@ -362,13 +362,7 @@ a {
   }
 }
 
-/* sub heading syling */
 #sub {
-  font-size: 2.5em;
+  font-size: 2em;
   color: black;
-}
-#sub2 {
-  font-size: 2.5em;
-  color: black;
-  padding-top: 50px;
 }
