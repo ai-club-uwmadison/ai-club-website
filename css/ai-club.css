@@ -77,6 +77,14 @@ h3 span {
   position:absolute; 
   top:-70px;
 }
+h2 { 
+  position:relative; 
+  z-index: 0;
+}
+h2 span { 
+  position:absolute; 
+  top:-70px;
+}
 
 /* disbles canvas on smaller screens */
 @media only screen and (min-width: 1000px) {
