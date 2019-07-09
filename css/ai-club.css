@@ -94,7 +94,7 @@ h3 span {
 
 /* font styles */
 h1 {
-  font-size: 7vw;
+  font-size: 5em;
   text-align: center;
   color: #fff;
   line-height:0em;
@@ -102,9 +102,14 @@ h1 {
 h2 {
   font-size: 30px;
   text-align: center;
-  color: #CC918F;
+  color: #b2a1a1;
 }
 h3 {
+  font-size: 25px;
+  text-align: center;
+  color: #b85a5a;
+}
+h4 {
   font-size: 20px;
   text-align: center;
   color: #9B0400;
@@ -362,7 +367,22 @@ a {
   }
 }
 
+/* sub heading styling */
 #sub {
   font-size: 2em;
   color: black;
+}
+
+/* table of contents styling */
+.contents {
+  list-style-type: none;
+  text-align: center;
+  margin-left: -50px;
+}
+.contents a:hover {
+  color: #b2a1a1;
+}
+.contents a {
+  font-size: 1.2em;
+  text-decoration: none;
 }
