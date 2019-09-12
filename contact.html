@@ -13,7 +13,7 @@
     <meta property="og:title" content="AI @ UW" />
     <meta property="og:image" content="images/logo_full_og.png" />
 
-    <title>AI @ UW</title>
+    <title>AI @ UW- Contact</title>
 
     <!-- Custom CSS -->
     <link href="css/ai-club.css" rel="stylesheet">
@@ -23,7 +23,7 @@
 </head>
 
 <!-- dots canvas-->
-<canvas id="canvasHome" class='connecting-dots'>
+<canvas class='connecting-dots'>
 </canvas>
 
 <body>
@@ -46,7 +46,9 @@
         </ul>
         <!-- mobile freindly menu-->
         <ul class="menuSmall">
-            <li class="menu_item" id="menuLogoMobile"><a href="index.html"><img src="images/logo.png" alt="AI@UW Logo"></a></li>
+            <li class="menu_item" id="menuLogoMobile"><a href="index.html"><img src="images/logo.png" alt="AI@UW Logo">
+                    <p style="display:none">AI@UW Logo</p>
+                </a></li>
             <li class="menu_item" id="openMenu"><span onclick="openNav()">&#9776;</span></li>
         </ul>
         <!-- menu dropdown-->
@@ -69,15 +71,16 @@
                                             <li><a href="#ms">Machine Sentience</a></li>-->
                                         </ul>
                                     </li>
-        
+
                                 </ul>
                                 <ul>
-                                    
+
                                     <li>
                                         <h3 class="dropdownTitle">Active Study Groups</h3>
                                         <ul>
                                             <li><a href="projects.html#ml">Machine Learning</a></li>
-                                            <li><a href="projects.html#niagi">Neuro-Inspired Artificial General Intelligence</a></li>
+                                            <li><a href="projects.html#niagi">Neuro-Inspired Artificial General
+                                                    Intelligence</a></li>
                                             <li><a href="projects.html#rl">Reinforcement Learning</a></li>
                                         </ul>
                                     </li>
@@ -90,41 +93,70 @@
                 </div>
             </div>
         </div>
-        </header>
-        <!-- mobile freindly side menu-->
-        <div id="mySidenav" class="sidenav">
-            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-            <ul>
-                <li class="menu__item"><a href="about.html">About</a></li>
-                <li class="menu__item"><a href="faq.html">FAQ</a></li>
-                <li class="menu__item"><a href="leadership.html">Leaders</a></li>
-                <li class="menu__item"><a href="roles.html">Get Involved</a></li>
-                <li class="menu__item"><a href="seminars.html">Seminars</a></li>
-                <li class="menu__item"><a href="projects.html">Projects</a>
-                    <ul id="navSubMenu">
-                        <li><a href="projects.html#att">Algorithmic Trading Team</a></li>
-                        <!-- <li><a href="projects.html#lsct">Learning Source Code Team</a></li>
+    </header>
+    <!-- mobile freindly side menu-->
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <ul>
+            <li class="menu__item"><a href="about.html">About</a></li>
+            <li class="menu__item"><a href="faq.html">FAQ</a></li>
+            <li class="menu__item"><a href="leadership.html">Leaders</a></li>
+            <li class="menu__item"><a href="roles.html">Get Involved</a></li>
+            <li class="menu__item"><a href="seminars.html">Seminars</a></li>
+            <li class="menu__item"><a href="projects.html">Projects</a>
+                <ul id="navSubMenu">
+                    <li><a href="projects.html#att">Algorithmic Trading Team</a></li>
+                    <!-- <li><a href="projects.html#lsct">Learning Source Code Team</a></li>
                     <li><a href="projects.html#ms">Machine Sentience</a></li> -->
-                        <li><a href="projects.html#ml">Machine Learning</a></li>
-                        <li><a href="projects.html#niagi">Neuro-Inspired Artificial General Intelligence</a></li>
-                        <li><a href="projects.html#rl">Reinforcement Learning</a></li>
-                    </ul>
-                </li>
-                <li class="menu__item"><a href="calendar.html">Calendar</a></li>
-                <li class="menu__item"><a href="https://wisconsinai.slack.com/">Slack Link</a></li>
-                <li class="menu__item"><a href="contact.html">Contact Us</a></li>
-            </ul>
-        </div>
+                    <li><a href="projects.html#ml">Machine Learning</a></li>
+                    <li><a href="projects.html#niagi">Neuro-Inspired Artificial General Intelligence</a></li>
+                    <li><a href="projects.html#rl">Reinforcement Learning</a></li>
+                </ul>
+            </li>
+            <li class="menu__item"><a href="calendar.html">Calendar</a></li>
+            <li class="menu__item"><a href="https://wisconsinai.slack.com/">Slack Link</a></li>
+            <li class="menu__item"><a href="contact.html">Contact Us</a></li>
+        </ul>
+    </div>
 
-    <!-- Centered image -->
-    <div class="banner">
-        <img class="img-responsive logo-banner" src="./images/logo_full.png" alt="Chania">
+    <!-- header -->
+    <div class="head">
+        <h1>Contact</h1>
+    </div>
+
+    <!-- main content -->
+    <div class="seminarMain">
+        <div class="key">
+            <div class="keyBox" id="research">
+                <a href="mailto:aiclubuwmadison@gmail.com"><h4>E-mail</h4></a>
+            </div>
+            
+            <div class="keyBox" id="applied">
+                <a href="http://eepurl.com/dMyKlQ"><h4>Newsletter Sign-up</h4></a>
+            </div>
+        </div>
     </div>
 
     <!-- Scripts -->
     <script src="js/background.js"></script>
-    <script src="js/sideNav.js"></script>
     <script src="js/menu.js"></script>
+    <script src="js/sideNav.js"></script>
+    <script>
+        var coll = document.getElementsByClassName("collapsible");
+        var i;
+
+        for (i = 0; i < coll.length; i++) {
+            coll[i].addEventListener("click", function () {
+                this.classList.toggle("active");
+                var content = this.nextElementSibling;
+                if (content.style.display === "block") {
+                    content.style.display = "none";
+                } else {
+                    content.style.display = "block";
+                }
+            });
+        }
+    </script>
 
 </body>
 
