@@ -410,11 +410,11 @@ a {
   text-align: center;
 }
 
-.active, .collapsible:hover {
+.collapsible:hover {
   background-color: #555;
 }
 
-.content {
+.seminarContent {
   padding: 0 18px;
   display: none;
   overflow: hidden;
