@@ -105,7 +105,6 @@ h1 {
   font-size: 5em;
   text-align: center;
   color: #fff;
-  line-height:0em;
 }
 h2 {
   font-size: 30px;
@@ -145,6 +144,10 @@ a {
     padding-top: 20px;
     padding-bottom: 40px;
 }  
+.head h1{
+    font-size: 3em;
+    word-spacing: 30000px; 
+}  
 .main{
     z-index:2;
     width: 100%;
@@ -178,6 +181,9 @@ a {
     margin-bottom: 0;
     box-shadow: 0px -10px 155px -16px rgba(0,0,0,0.34);
   }  
+  .head h1 {
+    font-size: 4em;
+  }
   .main{
     z-index:2;
     width: 70%;
