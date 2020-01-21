@@ -125,7 +125,9 @@
     <!-- header -->
     <div class="head">
         <h1>Projects- Spring 2020</h1>
-        <h2>A List Of All Our Spring 2020 Projects</h2>
+        <h2>This semester, we will provide projects in which students cooperate with professors to enhance their technical skills
+        while getting research credits. Our research projects range from different topics including deep learning, supervised
+        classification, linear techniques, and more. Here are some options that you might be interested to get involved in.</h2>
     </div>
 
     <!-- main content -->
@@ -191,6 +193,55 @@
             <strong>Number of Open Positions:</strong> 1 to 2<br />
             <strong>Time-Commitment:</strong> 10 hrs / week (for credits)<br />
             <strong>Contact Info:</strong> Rachel Puralewski,​​ <a href="mailto:puralewski@wisc.edu">puralewski@wisc.edu</a></p>
+
+        <h3><span id="3"></span>Identifying Active Extravasation on Arteriograms using Machine Learning</h3>
+        <p>Interventional radiologists perform angiograms to identify bleeding before embolization. Bleeding on angiograms is
+        mimicked by artifacts and can be difficult to recognize. This project pairs experts in interventional radiology with
+        experts in computer science and engineering, in order to develop deep learning machine learning tools to identify sites
+        of bleeding on angiograms. We use supervised learning trained on a database of labeled images with bleed sites
+        identified. We have already used ResNet-152 as the first stage classifier and Faster R-CNN as the second stage object
+        detector, and we evaluated images rather than series. We subsequently explored the CNN YOLO with multi-channel
+        preprocessing using time-weighted image aggregation and difference image aggregation to infuse temporal information to
+        emphasize the sites of bleeding. We propose to use more advanced deep learning models in our next stage of modeling
+        development. The first approach will use “attention” to help the object detection model focus on the bleeding region
+        that is of interest, an approach used effectively in similar problems. The second approach will use temporal object
+        detection neural networks that can extract temporal and spatial relation between bleeding sites automatically. We will
+        also explore using machine learning techniques with un-subtracted series, which we suspect will increase our accuracy as
+        machine learning techniques are not limited by human contrast perceptual issues and the raw images avoid motion
+        artifacts associated with subtraction.</p>
+        <p><strong>Contact:</strong> Dane Morgan, PhD (UW MS&E, <a href="mailto:ddmorgan@wisc.edu">ddmorgan@wisc.edu</a>)<br />
+            <strong>Team leads:</strong> Mark Kleedehn, MD (UW Radiology, <a href="mailto:mkleedehn@uwhealth.org">mkleedehn@uwhealth.org</a>), Dane Morgan, PhD (UW MS&E, <a href="mailto:ddmorgan@wisc.edu">ddmorgan@wisc.edu</a>), Mingren Shen
+            (UW, Graduate Student, <a href="mailto:mshen32@wisc.edu">mshen32@wisc.edu).</a><br />
+            <strong>Positions:</strong> 4-8 UG students<br />
+            <strong>Funding:</strong> None at present. Can work for credits.<br />
+            <strong>Requirements:</strong> 10h/wk.<br />
+
+        <h3><span id="3"></span>Application of Machine Learning to CT Characterization of Renal Cell Carcinoma</h3>
+        <p>Characterization of renal cell carcinoma (RCC) using classical radiomics has shown association with pathologic features.
+        This project applies advanced machine-learning analysis or deep learning models to tumor segmentations with pathologic
+        data to identify clinically relevant associations. The models will be tested/refined on ex vivo RCC specimens with
+        direct radiologic-pathologic correlation. We have data on approximately 150 RCCs and about 300 radiomics features
+        (anatomic, texture) from each. This imaging data has previously demonstrated some association with pathologic features
+        (e.g. histologic subtype) with basic statistical analysis but we were unable to identify aggressive tumors (nuclear
+        grade 3-4, +sarcomatoid features). We have a second group of segmented tumors from a sarcomatoid rich cohort
+        (approximately 95 patients, with size matched controls) where we were also unable to identify a consistent imaging
+        signature using a classical radiomics approach. These problems may be dramatically improved by application of machine or
+        deep-learning-based methods due to their strong ability to learn the hierarchical latent features of complex data in
+        high dimensional space. We will explore cluster analysis and Random Forest modeling on the present set of radiomics
+        features. Then we will build a deep learning to build a tumor nuclear grade classifier system for CT images. Tumor
+        nuclear grade consists of discrete values 1,2,3,4 and unknown if not applicable. A similar study has been conducted in
+        staging liver fibrosis but no robust demonstration of a deep learning system for classifying tumor nuclear grades in
+        renal masses currently exists. We plan to use U-Net architecture to segment the tumor from the input CT images and then
+        the segmented tumors will be put into a 3D Convolutional Neural Network (CNN) to generate the final tumor nuclear grades
+        for each tumor. We will also consider attention and CNNs to directly link tumor CT images to nuclear grades.</p>
+        <p><strong>Contact:</strong> Dane Morgan, PhD (UW MS&E, <a href="mailto:ddmorgan@wisc.edu">ddmorgan@wisc.edu</a>)<br />
+            <strong>Team leads:</strong> Meghan G. Lubner, MD (UW Radiology, <a
+                href="mailto:mlubner@uwhealth.org">mlubner@uwhealth.org</a>), Dane Morgan, PhD (UW MS&E, <a
+                href="mailto:ddmorgan@wisc.edu">ddmorgan@wisc.edu</a>), Mingren Shen
+            (UW, Graduate Student, <a href="mailto:mshen32@wisc.edu">mshen32@wisc.edu).</a><br />
+            <strong>Positions:</strong> 4-8 UG students<br />
+            <strong>Funding:</strong> None at present. Can work for credits.<br />
+            <strong>Requirements:</strong> 10h/wk.<br />
         
         <h3><span id="4"></span>Categorizing dendritic spine morphology</h3>
         <p>We seek to use the machine learning or AI to categorize dendritic spine morphology asa measure of synapse maturity.
@@ -203,7 +254,16 @@
             <strong>Time-Commitment:</strong> 5 hrs / credit (for credits)<br />
             <strong>Contact Info:</strong> Erik Dent P.I., ​​<a href="mailto:​​ttenpas@wisc.edu">tenpas@wisc.edu</a></p>
 
-
+        <h3><span id="3"></span>Exploring Error and Model Domains in Materials Machine Learning</h3>
+        <p>I am interested in working with public data and models with natural error estimation methods (e.g., Bayesian approaches
+        like Gaussian Process Regression or ensembles of neural networks) to explore their accuracy. The detailed approaches are
+        not yet worked out and would be part of the team's initial activities.</p>
+        <p>
+            <strong>Department:</strong> MS&E<br />
+            <strong>Prereqs:</strong> No background necessary but some machine learning experience preferred.<br />
+            <strong>Number of open positions:</strong> 4-8<br />
+            <strong>Requirements:</strong> 10 hrs per week (for credits)<br />
+            <strong>Contact:</strong> Dane Morgan, PhD (UW MS&E, <a href="mailto:ddmorgan@wisc.edu">ddmorgan@wisc.edu</a>)<br />
     </div>
 
     <!-- Scripts -->
