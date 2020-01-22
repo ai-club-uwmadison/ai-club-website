@@ -13,7 +13,7 @@
     <meta property="og:title" content="AI @ UW" />
     <meta property="og:image" content="images/logo_full_og.png" />
 
-    <title>AI @ UW- Projects</title>
+    <title>AI @ UW- Projects: Credit/Pay</title>
 
     <!-- Custom CSS -->
     <link href="css/ai-club.css" rel="stylesheet">
@@ -30,14 +30,15 @@
     <header id="head" class="main-header">
         <!-- main menu-->
         <ul class="menuLarge">
-            <li class="menu__item"><a href="about.html">About Us</a></li>
+            <li class="menu__item"><a href="about.html">About</a></li>
             <li class="menu__item"><a href="faq.html">FAQ</a></li>
             <li class="menu__item"><a href="leadership.html">Leaders</a></li>
-            <li class="menu__item"><a href="roles.html">Get Involved</a></li>
+            <li class="menu__item"><a href="roles.html">Join</a></li>
+            <li class="menu__item"><a href="seminars.html">Seminars</a></li>
             <li class="menu_item" id="menuLogo"><a href="index.html"><img src="images/logo.png" alt="AI@UW Logo"></a>
                 <p style="display:none">AI@UW Logo</p>
             </li>
-            <li class="menu__item"><a href="seminars.html">Seminars</a></li>
+            <li class="menu__item"><a href="studyGroups.html">Study Groups</a></li>
             <li class="menu__item" data-sub="projects"><a href="projects.html">Projects</a></li>
             <li class="menu__item"><a href="calendar.html">Calendar</a></li>
             <li class="menu__item"><a href="contact.html">Contact</a></li>
@@ -45,8 +46,9 @@
         <!-- mobile freindly menu-->
         <ul class="menuSmall">
             <li class="menu_item" id="menuLogoMobile"><a href="index.html"><img src="images/logo.png"></a></li>
-                <li class="menu_item" id="openMenu"><span onclick="openNav()">&#9776;</span></li>
+            <li class="menu_item" id="openMenu"><span onclick="openNav()">&#9776;</span></li>
         </ul>
+
         <!-- menu dropdown-->
         <div class="dropdown-holder">
             <div class="dropdown__arrow"></div>
@@ -54,31 +56,51 @@
                 <div class="dropdown__bg-bottom"></div>
             </div>
             <div class="dropdown__wrap">
+                <div class="dropdown-menu" id="studyGroups">
+                    <div class="dropdown-menu__content">
+                        <div class="top-section">
+                            <div class="col-2">
+                                <ul>
+                                    <h3 class="dropdownTitle">Active Study Groups</h3>
+                                    <ul>
+                                        <li><a href="studyGroups.html#niagi">Neuro-Inspired Artificial General
+                                                Intelligence</a></li>
+                                        <li><a href="studyGroups.html#casg">Causal Architecture Study Group</a></li>
+                                        <li><a href="studyGroups.html#dlsg">Deep Learning Study Group</a></li>
+                                        <li><a href="studyGroups.html#iaisg">Introduction to AI Study Group</a></li>
+                                        <li><a href="studyGroups.html#eaisg">Ethical AI Study Group</a></li>
+                                    </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="bottom-section">
+                        </div>
+                    </div>
+                </div>
                 <div class="dropdown-menu" id="projects" data-sub="projects">
                     <div class="dropdown-menu__content">
                         <div class="top-section">
-                            <h2><a href="spring-projects.html">SPRING 2020 PROJECTS</a></h2>
                             <div class="col-2">
                                 <ul>
-                                    <li>
-                                        <h3 class="dropdownTitle">Active Engineering Teams</h3>
-                                        <ul>
-                                            <li><a href="projects.html#att">Algorithmic Trading Team</a></li>
-                                            <li><a href="projects.html#eag">Engr-auto Group</a></li>
-                                        </ul>
-                                    </li>
-                                    
+                                    <h3 class="dropdownTitle"><a href="studentProjects.html">Student Run</a></h3>
+                                    <ul>
+                                        <li><a href="studentProjects.html#att">Algorithmic Trading Team</a></li>
+                                        <li><a href="studentProjects.html#eag">Engr-auto Group</a></li>
+                                    </ul>
                                 </ul>
                                 <ul>
-                                        <h3 class="dropdownTitle">Active Study Groups</h3>
-                                        <ul>
-                                            <li><a href="projects.html#niagi">Neuro-Inspired Artificial General Intelligence</a></li>
-                                            <li><a href="projects.html#casg">Causal Architecture Study Group:</a></li>
-                                            <li><a href="projects.html#dlsg">Deep Learning Study Group</a></li>
-                                            <li><a href="projects.html#iaisg">Introduction to AI Study Group</a></li>
-                                            <li><a href="projects.html#eaisg">Ethical AI Study Group</a></li>
-                                        </ul>                                    
-                                    </li>
+                                    <h3 class="dropdownTitle"><a href="projects.html">Credit/Pay</a></h3>
+                                    <ul>
+                                        <li><a href="projects.html#1">Application of Machine Learning to Analyze Molecular Dynamics Simulations</a></li>
+                                        <li><a href="projects.html#2">Exploring the neural basis of consciousness</a></li>
+                                        <li><a href="projects.html#3">Building an automated machine learning algorithm forcharacterization of
+                                                anxiety-related vocalizations in non-human primates</a></li>
+                                        <li><a href="projects.html#4">Identifying Active Extravasation on Arteriograms using Machine Learning</a></li>
+                                        <li><a href="projects.html#5">Application of Machine Learning to CT Characterization of Renal Cell Carcinoma</a></li>
+                                        <li><a href="projects.html#6">Categorizing dendritic spine morphology</a></li>
+                                        <li><a href="projects.html#7">Exploring Error and Model Domains in Materials Machine Learning</a></li>
+                                    </ul>
                                 </ul>
                             </div>
                         </div>
@@ -90,7 +112,7 @@
         </div>
     </header>
     <!-- mobile freindly side menu-->
-        <div id="mySidenav" class="sidenav">
+    <div id="mySidenav" class="sidenav">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
         <ul>
             <li class="menu__item"><a href="about.html">About</a></li>
@@ -98,18 +120,31 @@
             <li class="menu__item"><a href="leadership.html">Leaders</a></li>
             <li class="menu__item"><a href="roles.html">Get Involved</a></li>
             <li class="menu__item"><a href="seminars.html">Seminars</a></li>
-            <li class="menu__item"><a href="spring-projects.html">Spring 2020 Projects</a></li>
-            <li class="menu__item"><a href="projects.html">Projects</a>
+            <li class="menu__item"><a href="studyGroups.html">Study Groups</a></li>
                 <ul id="navSubMenu">
-                    <li><a href="projects.html#att">Algorithmic Trading Team</a></li>
-                    <li><a href="projects.html#eag">Engr-auto Group</a></li>
-                    <li><a href="projects.html#niagi">Neuro-Inspired Artificial General Intelligence</a></li>
-                    <li><a href="projects.html#casg">Causal Architecture Study Group:</a></li>
-                    <li><a href="projects.html#dlsg">Deep Learning Study Group</a></li>
-                    <li><a href="projects.html#iaisg">Introduction to AI Study Group</a></li>
-                    <li><a href="projects.html#eaisg">Ethical AI Study Group</a></li>
+                    <li><a href="studyGroups.html#niagi">Neuro-Inspired Artificial General Intelligence</a></li>
+                    <li><a href="studyGroups.html#casg">Causal Architecture Study Group:</a></li>
+                    <li><a href="studyGroups.html#dlsg">Deep Learning Study Group</a></li>
+                    <li><a href="studyGroups.html#iaisg">Introduction to AI Study Group</a></li>
+                    <li><a href="studyGroups.html#eaisg">Ethical AI Study Group</a></li>
+                </ul>
+            <li class="menu__item"><a href="studentProjects.html">Projects: Student Run</a>
+                <ul id="navSubMenu">
+                    <li><a href="studentProjects.html#att">Algorithmic Trading Team</a></li>
+                    <li><a href="studentProjects.html#eag">Engr-auto Group</a></li>
                 </ul>
             </li>
+            <li class="menu__item"><a href="projects.html">Projects: Credit/Pay</a>
+                <ul id="navSubMenu">
+                    <li><a href="projects.html#1">Application of Machine Learning to Analyze Molecular Dynamics Simulations</a></li>
+                    <li><a href="projects.html#2">Exploring the neural basis of consciousness</a></li>
+                    <li><a href="projects.html#3">Building an automated machine learning algorithm forcharacterization of
+                            anxiety-related vocalizations in non-human primates</a></li>
+                    <li><a href="projects.html#4">Identifying Active Extravasation on Arteriograms using Machine Learning</a></li>
+                    <li><a href="projects.html#5">Application of Machine Learning to CT Characterization of Renal Cell Carcinoma</a></li>
+                    <li><a href="projects.html#6">Categorizing dendritic spine morphology</a></li>
+                    <li><a href="projects.html#7">Exploring Error and Model Domains in Materials Machine Learning</a></li>
+                </ul>
             <li class="menu__item"><a href="calendar.html">Calendar</a></li>
             <li class="menu__item"><a href="contact.html">Conact</a>
                 <ul id="navSubMenu">
@@ -120,124 +155,153 @@
             </li>
         </ul>
     </div>
-    
+
     <!-- header -->
-    <div class="head"><h1>Projects</h1>
-        <h2>A List Of All Our Active Projects</h2>
+    <div class="head">
+        <h1>Projects: Credit/Pay</h1>
+        <h2>This semester, we will provide projects in which students cooperate with professors to enhance their technical skills
+        while getting research credits. Our research projects range from different topics including deep learning, supervised
+        classification, linear techniques, and more. Here are some options that you might be interested to get involved in.</h2>
     </div>
 
     <!-- main content -->
     <div class="main">
         <h2>TABLE OF CONTENTS</h2>
         <ul class="contents">
-            <li><a href="projects.html#att">Algorithmic Trading Team</a></li>
-            <li><a href="projects.html#eag">Engr-auto Group</a></li>
-            <li><a href="projects.html#niagi">Neuro-Inspired Artificial General Intelligence</a></li>
-            <li><a href="projects.html#casg">Causal Architecture Study Group:</a></li>
-            <li><a href="projects.html#dlsg">Deep Learning Study Group</a></li>
-            <li><a href="projects.html#iaisg">Introduction to AI Study Group</a></li>
-            <li><a href="projects.html#eaisg">Ethical AI Study Group</a></li>
+            <li><a href="projects.html#1">Application of Machine Learning to Analyze Molecular Dynamics Simulations</a></li><br />
+            <li><a href="projects.html#2">Exploring the neural basis of consciousness</a></li><br />
+            <li><a href="projects.html#3">Building an automated machine learning algorithm forcharacterization of anxiety-related vocalizations in non-human primates</a></li><br />
+            <li><a href="projects.html#4">Identifying Active Extravasation on Arteriograms using Machine Learning</a></li><br />
+            <li><a href="projects.html#5">Application of Machine Learning to CT Characterization of Renal Cell Carcinoma</a></li><br />
+            <li><a href="projects.html#6">Categorizing dendritic spine morphology</a></li><br />
+            <li><a href="projects.html#7">Exploring Error and Model Domains in Materials Machine Learning</a></li><br />
+
         </ul>
         <br>
         <hr>
-        <h2>Active Engineering Teams</h2>
+        <h3><span id="1"></span>Application of Machine Learning to Analyze Molecular Dynamics Simulations</h3>
+        <p>We are currently developing machine learning methods to predict the thermodynamicproperties of interfaces in
+        liquid-phase environments. Our datasets consist of hundredsof thousands of atomic positions obtained from classical
+        molecular dynamics (MD)simulations. An MD simulation predicts the motion of atoms and molecules at molecularlength and
+        timescales (nm and ps respectively). Typically, simulation data are analyzedusing techniques based on statistical
+        mechanics, but we have demonstrated thatmachine learning can drastically reduce the simulation time required to
+        makepredictions of one particular thermodynamic property that is critical for predictinginterfacial hydrophobicity – the
+        hydration free energy - which is relevant to the design ofbiological materials. In our present work, we have used
+        LeNet5, a 2D convolutionalneural network architecture developed by LeCun et al. The project would involve usingalready
+        curated datasets and testing the effect of different machine learning algorithmson prediction accuracy. Students are
+        also free to extend the scope of the project and tryother machine learning models, such as 3-D CNNs or graph neural
+        networks, whichwould require modification of the input data representation.</p>
+        <p><strong>AI/ML Methods & Tools:</strong> Supervised classification; Deep Learning; Linear Regression;Dimensionality Reduction (e.g. PCA, diffusion map embedding)<br />
+            <strong>Department:</strong> Chemical and Biological Engineering<br />
+            <strong>Prereqs:</strong> Proficiency in Python is required. Some machine learning experience withtoolboxes like Tensorflow/PyTorch is preferred.
+            Courses in physical chemistry orthermodynamics are preferred but not necessary.<br />
+            <strong>Number of Open Positions:</strong> 2 to 4<br />
+            <strong>Time-Commitment:</strong> 10 hrs / week (for credits)<br />
+            <strong>Contact Info:</strong> Reid Van Lehn, <a href="mailto:vanlehn@wisc.edu">vanlehn@wisc.edu</a></p>
 
-        <h3><span id="att"></span>Algorithmic Trading Team</h3>
-        <p>This applied AI project’s goal is to model stock market trends and create a decision-making bot that leverages that info for automated trading. The project features opportunities to work on and learn more about feature-mining, database management, NLP & text-analysis, change-point detection, time-series forecasting, deep learning, and reinforcement learning. Highly motivated students may take part in leading one of these subgroups.</p>
-        <p><strong>Time-Commitment:</strong> 3 hours/week<br />
-        <strong>Contact Info:</strong> @Chris Endemann (Slack), <a href="mailto: endemann@wisc.edu">endemann@wisc.edu</a><br />
-        <strong>Prereqs:</strong>  Anyone with some basic coding experience is welcome to join the team! If you’re more experienced, I am actively seeking subgroup leaders for NLP, reinforcement learning and deep learning components of the project.<br />
-        <strong>Meeting time/location:</strong> Tuesdays @6:30pm</p>
+        <h3><span id="2"></span>Exploring the neural basis of consciousness</h3>
+        <p>We seek to identify changes in brain activity and connectivity that underlie changes inarousal state using imaging and
+        electrophysiology data recorded from neurosurgicalpatients. In this project, students will use machine learning tools to
+        track the dynamicsof brain network configuration with the goals of (a) identifying subsets of network
+        configurations that associate with specific arousal states (wake, sleep, anesthesia), (b)building Markov models to
+        identify and quantify state transitions, (c) developing analgorithm to predict arousal state in real-time, and (d)
+        developing and applyingmatrix-completion algorithms to facilitate summarizing data across subjects.</p>
+        <p><strong>AI/ML Methods & Tools:</strong> Supervised classification; Unsupervised classification (e.g.clustering); Time-Series Analysis; Deep Learning; Linear
+        Regression; Markov Models;Dimensionality Reduction (e.g. PCA, diffusion map embedding)<br />
+            <strong>Department:</strong> Anesthesiology & Neuroscience<br />
+            <strong>Prereqs:</strong> Proficiency in Python and/ or Matlab is required. Some signal processingbackground is desirable.<br />
+            <strong>Number of Open Positions:</strong> 2<br />
+            <strong>Time-Commitment:</strong> 10 hrs/week minimum (either for credits or wage)<br />
+            <strong>Contact Info:</strong> Matthew Banks,​​ <a href="mailto:mibanks@wisc.edu">mibanks@wisc.edu</a></p>
 
-        <h3><span id="eag"></span>Engr-auto Group</h3>
-        <p>The engr-auto group is an exciting new collaboration between the Formula SAE Autonomous team and AI@UW!  Project members will have the opportunity to use state-of-the-art computer vision algorithms to detect obstacles and generate a path for a ⅓ scale Formula style race car to drive at the 2021 Formula Student Germany competition.  Experience developed over the course of the project will include convolutional neural networks, algorithm implementation, ROS, localization, and data collection.  If you are interested in using AI to solve the real-world engineering problem of autonomous driving, join the #engr-auto group on Slack for future updates!</p>
-        <p><strong>Time-Commitment:</strong> 3 hours/week<br />
-        <strong>Contact Info:</strong>@Alex Vesel (Slack), @Adam Shedivy (slack), @Declan (slack)<br />
-        <strong>Prereqs:</strong>   Anyone with some basic coding experience is welcome to join the team! Knowledge of basic neural networks, python or tensorFlow is recommended<br />
-        <strong>Meeting time/location:</strong> Sundays @12pm</p>
+        <h3><span id="3"></span>Building an automated machine learning algorithm forcharacterization of anxiety-related vocalizations in non-human primates</h3>
+        <p>Anxiety disorders (ADs) are among the most common psychiatric illnesses in the worldand cause significant psychosocial,
+        emotional, and physical distress. ADs typicallyemerge early in childhood and follow a chronic course. A primary interest
+        of the KalinLab is to characterize the neurodevelopmental origins of anxiety, both in human andmonkey models. Due to
+        their extensive behavioral and neuroanatomical similarities tohumans, primate models play a critical role in
+        psychopathology research. Specifically,they allow for mechanistic studies of underlying alterations in neural circuitry.
+        Primatesdisplay a variety of behaviors when exposed to threatening stimuli, many of whichcontribute to an anxious
+        temperament. Of these, a key indicator of an anxiousphenotype is the frequency and quality of vocalizations. In a large
+        sample ofpreadolescent monkeys, we hope to build and train an unsupervised ML algorithm thatcan detect and differentiate
+        a range of anxiety-related vocal events.</p>
+        <p><strong>AI/ML Methods & Tools:</strong> Supervised classification; Unsupervised classification (e.g.clustering); Deep Learning<br />
+            <strong>Department:</strong> Psychiatry, SMPH<br />
+            <strong>Prereqs:</strong> Proficiency in Python/Git and/ or familiarity with R is required. Experience withbash/command line is also required.
+            Some machine learning experience withTensorflow and audio processing is preferred.<br />
+            <strong>Number of Open Positions:</strong> 1 to 2<br />
+            <strong>Time-Commitment:</strong> 10 hrs / week (for credits)<br />
+            <strong>Contact Info:</strong> Rachel Puralewski,​​ <a href="mailto:puralewski@wisc.edu">puralewski@wisc.edu</a></p>
 
-         <!-- <h3><span id="ms"></span>Machine Sentience</h3>
-        <p>This engineering team will be focused on learning about Guilio Tononi's theory of <a href="http://integratedinformationtheory.org/">integrated information (IIT)</a>, and will
-        attempt to measure phi (integrated information) in various AI models using appropriate approximations of phi.</p>
-        <p><strong>Group Leaders:</strong>Chris Endemann, Declan Campbell<br />
-            <strong>Contact:</strong> @Chris Endemann (Slack), <a href="mailto: endemann@wisc.edu">endemann@wisc.edu</a>; @Declan (Slack), <a href="mailto: idcampbell@wisc.edu">idcampbell@wisc.edu</a> <br />
-            <strong>Slack channel:</strong> engr-phi-machines
-        </p> -->
+        <h3><span id="4"></span>Identifying Active Extravasation on Arteriograms using Machine Learning</h3>
+        <p>Interventional radiologists perform angiograms to identify bleeding before embolization. Bleeding on angiograms is
+        mimicked by artifacts and can be difficult to recognize. This project pairs experts in interventional radiology with
+        experts in computer science and engineering, in order to develop deep learning machine learning tools to identify sites
+        of bleeding on angiograms. We use supervised learning trained on a database of labeled images with bleed sites
+        identified. We have already used ResNet-152 as the first stage classifier and Faster R-CNN as the second stage object
+        detector, and we evaluated images rather than series. We subsequently explored the CNN YOLO with multi-channel
+        preprocessing using time-weighted image aggregation and difference image aggregation to infuse temporal information to
+        emphasize the sites of bleeding. We propose to use more advanced deep learning models in our next stage of modeling
+        development. The first approach will use “attention” to help the object detection model focus on the bleeding region
+        that is of interest, an approach used effectively in similar problems. The second approach will use temporal object
+        detection neural networks that can extract temporal and spatial relation between bleeding sites automatically. We will
+        also explore using machine learning techniques with un-subtracted series, which we suspect will increase our accuracy as
+        machine learning techniques are not limited by human contrast perceptual issues and the raw images avoid motion
+        artifacts associated with subtraction.</p>
+        <p><strong>Contact:</strong> Dane Morgan, PhD (UW MS&E, <a href="mailto:ddmorgan@wisc.edu">ddmorgan@wisc.edu</a>)<br />
+            <strong>Team leads:</strong> Mark Kleedehn, MD (UW Radiology, <a href="mailto:mkleedehn@uwhealth.org">mkleedehn@uwhealth.org</a>), Dane Morgan, PhD (UW MS&E, <a href="mailto:ddmorgan@wisc.edu">ddmorgan@wisc.edu</a>), Mingren Shen
+            (UW, Graduate Student, <a href="mailto:mshen32@wisc.edu">mshen32@wisc.edu).</a><br />
+            <strong>Positions:</strong> 4-8 UG students<br />
+            <strong>Funding:</strong> None at present. Can work for credits.<br />
+            <strong>Requirements:</strong> 10h/wk.<br />
 
-        <br><hr><br>
-        <h2>Active Study Groups</h2>
-
-        <!-- <h3><span id="ml"></span>Machine Learning</h3>
-        <p>Study group focusing around Andrew Ng’s machine learning course on Coursera. The course material is completed on an independent basis, but the group meetings provide a space to ask questions and discuss the course insofar as the group has progressed in it. Meetings take place every weekend; the Slack channel will contain details about the time and location.</p>
-        <p><strong>Group Leader:</strong> Soham Dasgupta <br />
-        <strong>Slack channel:</strong> study-ml<br />
-        <strong>Contact:</strong> @Soham Dasgupta (Slack), <a href="mailto: dasgupta8@wisc.edu">dasgupta8@wisc.edu</a></p> -->
-
-        <h3><span id="niagi"></span>Neuro-Inspired AI</h3>
-        <p>This study group will focus on discussing the interactions between the fields of cognitive science, computational neuroscience, and artificial intelligence. We will primarily focus our learning materials on research papers, and are always looking for additional members willing to present papers throughout the semester (we are willing to suggest some options).<br>
-</p>
-        <p>A few concrete subtopics we’d like to touch on throughout the semester(s)</p>
-        <ul>
-        <li>Origin and evolution of deep learning and reinforcement learning algorithms</li>
-        <li>Theories and evidence regarding how the brain updates its feature maps over time</li>
-        <li>How plastic is the neocortex at each level of the cortical hierarchy?</li>
-        <li>Does backprop occur in the brain? What biologically plausible alternatives to backprop exist?</li>
-        <li>How can theoretical neuroscience help reveal mechanisms/algorithms of AGI?</li>
-        <li>What key components are lacking from AI these days that prevent us from achieving AGI (e.g. how is the brain different from a DQN algorithm)?</li>
-        </ul>
+        <h3><span id="5"></span>Application of Machine Learning to CT Characterization of Renal Cell Carcinoma</h3>
+        <p>Characterization of renal cell carcinoma (RCC) using classical radiomics has shown association with pathologic features.
+        This project applies advanced machine-learning analysis or deep learning models to tumor segmentations with pathologic
+        data to identify clinically relevant associations. The models will be tested/refined on ex vivo RCC specimens with
+        direct radiologic-pathologic correlation. We have data on approximately 150 RCCs and about 300 radiomics features
+        (anatomic, texture) from each. This imaging data has previously demonstrated some association with pathologic features
+        (e.g. histologic subtype) with basic statistical analysis but we were unable to identify aggressive tumors (nuclear
+        grade 3-4, +sarcomatoid features). We have a second group of segmented tumors from a sarcomatoid rich cohort
+        (approximately 95 patients, with size matched controls) where we were also unable to identify a consistent imaging
+        signature using a classical radiomics approach. These problems may be dramatically improved by application of machine or
+        deep-learning-based methods due to their strong ability to learn the hierarchical latent features of complex data in
+        high dimensional space. We will explore cluster analysis and Random Forest modeling on the present set of radiomics
+        features. Then we will build a deep learning to build a tumor nuclear grade classifier system for CT images. Tumor
+        nuclear grade consists of discrete values 1,2,3,4 and unknown if not applicable. A similar study has been conducted in
+        staging liver fibrosis but no robust demonstration of a deep learning system for classifying tumor nuclear grades in
+        renal masses currently exists. We plan to use U-Net architecture to segment the tumor from the input CT images and then
+        the segmented tumors will be put into a 3D Convolutional Neural Network (CNN) to generate the final tumor nuclear grades
+        for each tumor. We will also consider attention and CNNs to directly link tumor CT images to nuclear grades.</p>
+        <p><strong>Contact:</strong> Dane Morgan, PhD (UW MS&E, <a href="mailto:ddmorgan@wisc.edu">ddmorgan@wisc.edu</a>)<br />
+            <strong>Team leads:</strong> Meghan G. Lubner, MD (UW Radiology, <a
+                href="mailto:mlubner@uwhealth.org">mlubner@uwhealth.org</a>), Dane Morgan, PhD (UW MS&E, <a
+                href="mailto:ddmorgan@wisc.edu">ddmorgan@wisc.edu</a>), Mingren Shen
+            (UW, Graduate Student, <a href="mailto:mshen32@wisc.edu">mshen32@wisc.edu).</a><br />
+            <strong>Positions:</strong> 4-8 UG students<br />
+            <strong>Funding:</strong> None at present. Can work for credits.<br />
+            <strong>Requirements:</strong> 10h/wk.<br />
         
-        <p><strong>Time-Commitment:</strong> 2 hours/week<br />
-        <strong>Contact Info:</strong>#sg-neuro-inspired; @Chris Endemann (Slack), <a href="mailto:endemann@wisc.edu">endemann@wisc.edu</a><br />
-        <strong>Prereqs:</strong>Previous experience with deep learning is helpful, but not required.
-<br />
-        <strong>Meeting time/location:</strong>Mondays @ 5:30pm, Memorial Union</p>
+        <h3><span id="6"></span>Categorizing dendritic spine morphology</h3>
+        <p>We seek to use the machine learning or AI to categorize dendritic spine morphology asa measure of synapse maturity.
+        Since we have just begun discussing how ML/AI mightbe incorporated into our project aims, we are open to new ideas.</p>
+        <p><strong>AI/ML Methods & Tools:</strong> Supervised classification; Unsupervised classification (e.g.clustering); Categorizing dendritic spine morphology
+        (Neuroscience)<br />
+            <strong>Department:</strong> Neuroscience<br />
+            <strong>Prereqs:</strong> ​Anyone with a strong knowledge of Machine Learning is desirable.<br />
+            <strong>Number of Open Positions:</strong> 1 to 2<br />
+            <strong>Time-Commitment:</strong> 5 hrs / credit (for credits)<br />
+            <strong>Contact Info:</strong> Erik Dent P.I., ​​<a href="mailto:​​ttenpas@wisc.edu">tenpas@wisc.edu</a></p>
 
-        <!-- <h3><span id="rl"></span>Reinforcement Learning</h3>
-        <p>Study reinforcement learning as a team! This semester (Spring 2019) we'll be reading an intro book on RL, and meeting
-        weekly to discuss a few chapters at a time. We meet Sundays at Rhetas from 3:45-5pm. Join our Slack channel to see which
-        chapters will be discussed next.</p>
-        <p><strong>Group Leader:</strong> Chris Endemann <br />
-            <strong>Slack channel:</strong> study-rl <br />
-            <strong>Contact:</strong> @Chris Endemann (Slack), <a href="mailto: endemann@wisc.edu">endemann@wisc.edu</a> 
-        </p> -->
-        
-        <h3><span id="dlsg"></span>Deep Learning Study Group:</h3>
-        <p>This study group will be focusing on working through Andrew Ng’s Deep Learning specialization on Coursera. This study group is a good way to break into the world of AI. In the five courses in the specialization, you will learn the foundations of Deep Learning, understand how to build neural networks, and learn how to lead successful machine learning projects. You will learn about Convolutional networks, RNNs, LSTM, Adam, Dropout, BatchNorm, Xavier/He initialization, and more. You will work on case studies from healthcare, autonomous driving, sign language reading, music generation, and natural language processing. You will master not only the theory, but also see how it is applied in industry. You will practice all these ideas in Python and in TensorFlow, which the courses will teach.</p>
-        <p><strong>Time-Commitment:</strong>  2-3 hours/week<br />
-        <strong>Contact Info:</strong>#sg-deep-learning; @Vishnu Yarlagadda (Slack); @Katherine Fu (Slack); <a href="mailto:vyarlagadda@wisc.edu">vyarlagadda@wisc.edu</a><br />
-        <strong>Prereqs:</strong>Previous experience with basic linear algebra (matrices) is helpful, but not required<br />
-        <strong>Meeting time/location:</strong>Mondays @ 7:30, Location: Check Slack</p>
-
-        <h3><span id="casg"></span>Causal Architecture Study Group:</h3>
-        <p>To effectively engage with the world, AI must reckon with information and causality. Further, the design of innovative artificially intelligent systems may improve by drawing inspiration from the remarkable causal architecture of some of the systems it seeks to imitate: living organisms and conscious minds. As such, we will approach this topic from several vantage points, including converging scientific theories of consciousness and the origin of life. We will assume no prior knowledge and build up the requisite mathematics and information theory as we go. The goal is to explore artificial intelligence as a “causally emergent” phenomena (see Agents Above, Atoms Below) through a discussion of research papers and topic primers.</p>
-        <p><strong>Time-Commitment:</strong>0-4 hours/week<br />
-        <strong>Contact Info:</strong> #sg-causal-arch; @Alex Plum (Slack), <a href="mailto:amplum@wisc.edu">amplum@wisc.edu</a><br />
-        <strong>Prereqs:</strong>None! Previous experience with probability theory, information theory, and stochastic processes is helpful, but not required.<br />
-        <strong>Meeting time/location:</strong>Wednesdays @ 7:30, Location: Check Slack</p>
-        
-        <h3><span id="iaisg"></span>Introduction to AI Study Group:</h3>
-        <p>Working through material from the book Artificial Intelligence: A Modern Approach by Russell and Norvig. There will be a decent overlap with the material taught in UW-Madison’s CS 540: Introduction to artificial intelligence, but we won't focus on the programming side of things unless people really want to. Great for people who want a solid conceptual foundation of classical AI techniques.</p>
-        <p><strong>Time-Commitment:</strong>1-3 hours/week<br />
-        <strong>Contact Info:</strong>#sg-intro-ai; @Nickolas Comeau (Slack), <a href="mailto:ncomeau@wisc.edu">ncomeau@wisc.edu</a> or Jules Vigy / Shri Shruthi Shridhar on slack<br />
-        <strong>Prereqs:</strong>Some background in calculus helpful, but no hard prerequisite knowledge requirements.<br />
-        <strong>Meeting time/location:</strong>Sundays @ 6:00, Location: Computer Sciences room 1257</p>
-        
-        <h3><span id="eaisg"></span>Ethical AI Study Group: </h3>
-        <p>This club-wide study group has been enacted to help the club establish several documents related to ethical guidelines in the tech industry. EVERYONE is encouraged to participate. We are making the slack channel for this group one of the default channels on slack so that as many club members as possible have a chance to respond to our polls. Soon, we will post a document to help summarize a reasonable and agreed upon set of standards to help mitigate risk associated with different platforms/apps/practices. Some of our core topics of interest include:</p>
-        <ul>
-            <li>User-Validation: Are bots a risk or not? How difficult is it to detect bots on social media platforms?</li>
-            <li>Algorithm Use: When should open source or complete transparency be encouraged/required<li>
-            <li>Data Use: How transparent should data-use be? What is a reasonable way to communicate such use? </li>
-            <li>Security standards: how can we protect user-data?</li>
-            <li>Model Interpretability: When to avoid black-box models</li>
-            <li>Bias: How to detect and when to intervene - content generators, classifiers</li>
-
-        <p><strong>Time-Commitment:</strong>10 minutes/week<br />
-        <strong>Contact Info:</strong>#sg-ethical-ai; @Chris Endemann (Slack), <a href="mailto:endemann@wisc.edu">endemann@wisc.edu 
-</a><br />
-        <strong>Prereqs:</strong>None<br />
-        <strong>Meeting time/location:</strong>Currently there are no meeting times.</p>
-
+        <h3><span id="7"></span>Exploring Error and Model Domains in Materials Machine Learning</h3>
+        <p>I am interested in working with public data and models with natural error estimation methods (e.g., Bayesian approaches
+        like Gaussian Process Regression or ensembles of neural networks) to explore their accuracy. The detailed approaches are
+        not yet worked out and would be part of the team's initial activities.</p>
+        <p>
+            <strong>Department:</strong> MS&E<br />
+            <strong>Prereqs:</strong> No background necessary but some machine learning experience preferred.<br />
+            <strong>Number of open positions:</strong> 4-8<br />
+            <strong>Requirements:</strong> 10 hrs per week (for credits)<br />
+            <strong>Contact:</strong> Dane Morgan, PhD (UW MS&E, <a href="mailto:ddmorgan@wisc.edu">ddmorgan@wisc.edu</a>)<br />
     </div>
 
     <!-- Scripts -->

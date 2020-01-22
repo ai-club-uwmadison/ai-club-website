@@ -145,9 +145,7 @@
 .dropdown-menu.active .dropdown-menu__content {
   opacity: 1;
 }
-#projects .dropdown-menu__content {
-  width: 640px;
-}
+
 #developer .dropdown-menu__content {
   width: 400px;
 }
@@ -157,28 +155,34 @@
 .col-2 > ul, .col-2 > div {
   flex: 1 0 150px;
 }
-#projects .col-2 li {
+.dropdown-menu .col-2 li {
   display: block;
   padding: 20px 20px 10px;
 }
-#projects .col-2 h3 {
+.dropdown-menu .col-2 h3 {
   font-size: 18px;
   margin: 0 0 10px;
   color: #FA7174;
   text-align: left;
 }
-#projects .col-2 li {
+.dropdown-menu .col-2 li {
   font-size: 18px;
   margin: 0 0 10px;
   color: #fff;
   text-align: left;
 }
-#projects .col-2 li:hover {
+.dropdown-menu .col-2 li:hover {
   color: #270100;
   text-align: left;
 }
 .info {
   line-height: 1.7;
+}
+#projects .dropdown-menu__content {
+  width: 640px;
+}
+#studyGroups .dropdown-menu__content {
+  width: 360px;
 }
 
 /* logo in menu styling */
