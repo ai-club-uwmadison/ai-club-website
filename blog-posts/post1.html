@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html class="full" lang="en">
+
+<head>
+
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<meta name="description" content="AI Club UW Madison" />
+	<meta name="keywords" content="ai, uw, ai-uw, aiwu, ai@uw, madison, artificialintelligence" />
+	<meta name="author" content="Luke Houge" />
+	<link rel="shortcut icon" href="images/logo.png">
+	<meta property="og:title" content="AI @ UW" />
+	<meta property="og:image" content="images/logo_full_og.png" />
+
+	<title>AI @ UW- Calendar</title>
+
+	<!-- Custom CSS -->
+	<link href="../css/ai-club.css" rel="stylesheet">
+	<link href="../css/leaders.css" rel="stylesheet">
+	<link href="../css/menu.css" rel="stylesheet">
+
+</head>
+
+<!-- dots canvas-->
+<canvas class='connecting-dots'>
+</canvas>
+
+<body>
+	<!-- menu banner-->
+	<header id="head" class="main-header">
+		<!-- main menu-->
+		<ul class="menuLarge">
+			<li class="menu__item"><a href="../about.html">About</a></li>
+			<li class="menu__item"><a href="../faq.html">FAQ</a></li>
+			<li class="menu__item"><a href="../leadership.html">Leadership</a></li>
+			<li class="menu__item"><a href="../roles.html">Join AI@UW</a></li>
+			<li class="menu__item"><a href="../seminars.html">Seminars</a></li>
+			<li class="menu_item" id="menuLogo"><a href="../index.html"><img src="../images/logo.png" alt="AI@UW Logo"></a>
+				<p style="display:none">AI@UW Logo</p>
+			</li>
+			<li class="menu__item"><a href="../studyGroups.html">Study Groups</a></li>
+			<li class="menu__item" data-sub="../projects"><a href="../projects.html">Projects</a></li>
+			<li class="menu__item"><a href="../blog.html">Blog</a></li>
+			<li class="menu__item"><a href="../calendar.html">Calendar</a></li>
+			<li class="menu__item"><a href="../contact.html">Contact</a></li>
+		</ul>
+		<!-- mobile friendly menu-->
+		<ul class="menuSmall">
+			<li class="menu_item" id="menuLogoMobile"><a href="index.html"><img src="images/logo.png"></a></li>
+			<li class="menu_item" id="openMenu"><span onclick="openNav()">&#9776;</span></li>
+		</ul>
+
+		<!-- menu dropdown-->
+		<div class="dropdown-holder">
+			<div class="dropdown__arrow"></div>
+			<div class="dropdown__bg">
+				<div class="dropdown__bg-bottom"></div>
+			</div>
+			<div class="dropdown__wrap">
+				<div class="dropdown-menu" id="studyGroups">
+					<div class="dropdown-menu__content">
+						<div class="top-section">
+							<div class="col-2">
+								<ul>
+									<h3 class="dropdownTitle">Active Study Groups</h3>
+									<ul>
+										<!-- <li><a href="../studyGroups.html#niagi">Neuro-Inspired Artificial General
+												Intelligence</a></li> -->
+										<li><a href="../studyGroups.html#casg">Causal Architecture Study Group</a></li>
+										<li><a href="../studyGroups.html#dlsg">Deep Learning Study Group</a></li>
+										<li><a href="../studyGroups.html#iaisg">Introduction to AI Study Group</a></li>
+										<li><a href="../studyGroups.html#eaisg">Ethical AI Study Group</a></li>
+									</ul>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="bottom-section">
+						</div>
+					</div>
+				</div>
+				<div class="dropdown-menu" id="projects" data-sub="projects">
+					<div class="dropdown-menu__content">
+						<div class="top-section">
+							<div class="col-2">
+								<ul>
+									<h3 class="dropdownTitle"><a href="../studentProjects.html">Student Run</a></h3>
+									<ul>
+										<li><a href="../studentProjects.html#att">Algorithmic Trading Team</a></li>
+										<li><a href="../studentProjects.html#eag">Engr-auto Group</a></li>
+										<li><a href="../studentProjects.html#mt">MelodiCoding Team</a></li>
+									</ul>
+								</ul>
+								<ul>
+									<h3 class="dropdownTitle"><a href="../projects.html">Credit/Pay</a></h3>
+									<ul>
+										<li><a href="../projects.html#1">Application of Machine Learning to Analyze
+												Molecular Dynamics Simulations</a></li>
+										<li><a href="../projects.html#2">Exploring the Neural Basis of Consciousness</a>
+										</li>
+										<li><a href="../projects.html#3">Building an Automated Machine Learning Algorithm for Characterization of Anxiety-related Vocalizations in Non-human Primates</a></li>
+										<li><a href="../projects.html#4">Identifying Active Extravasation on Arteriograms
+												using Machine Learning</a></li>
+										<li><a href="../projects.html#5">Application of Machine Learning to CT
+												Characterization of Renal Cell Carcinoma</a></li>
+										<li><a href="../projects.html#6">Categorizing Dendritic Spine Morphology</a></li>
+										<li><a href="../projects.html#7">Exploring Error and Model Domains in Materials
+												Machine Learning</a></li>
+									</ul>
+								</ul>
+							</div>
+						</div>
+						<div class="bottom-section">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+	<!-- mobile friendly side menu-->
+	<div id="mySidenav" class="sidenav">
+		<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+		<ul>
+			<li class="menu__item"><a href="../about.html">About</a></li>
+			<li class="menu__item"><a href="../faq.html">FAQ</a></li>
+			<li class="menu__item"><a href="../blog.html">Blog</a></li>
+			<li class="menu__item"><a href="../leadership.html">Leaders</a></li>
+			<li class="menu__item"><a href="../roles.html">Get Involved</a></li>
+			<li class="menu__item"><a href="../seminars.html">Seminars</a></li>
+			<li class="menu__item"><a href="../studyGroups.html">Study Groups</a></li>
+			<ul id="navSubMenu">
+				<!-- <li><a href="../studyGroups.html#niagi">Neuro-Inspired Artificial General Intelligence</a></li> -->
+				<li><a href="../studyGroups.html#casg">Causal Architecture Study Group:</a></li>
+				<li><a href="../studyGroups.html#dlsg">Deep Learning Study Group</a></li>
+				<li><a href="../studyGroups.html#iaisg">Introduction to AI Study Group</a></li>
+				<li><a href="../studyGroups.html#eaisg">Ethical AI Study Group</a></li>
+			</ul>
+			<li class="menu__item"><a href="../studentProjects.html">Projects: Student Run</a>
+				<ul id="navSubMenu">
+					<li><a href="../studentProjects.html#att">Algorithmic Trading Team</a></li>
+					<li><a href="../studentProjects.html#eag">Engr-auto Group</a></li>
+					<li><a href="../studentProjects.html#mt">MelodiCoding Team</a></li>
+				</ul>
+			</li>
+			<li class="menu__item"><a href="../projects.html">Projects: Credit/Pay</a>
+				<ul id="navSubMenu">
+					<li><a href="../projects.html#1">Application of Machine Learning to Analyze Molecular Dynamics
+							Simulations</a></li>
+					<li><a href="../projects.html#2">Exploring the Neural Basis of Consciousness</a></li>
+					<li><a href="../projects.html#3">Building an Automated Machine Learning Algorithm for Characterization  of Anxiety-related Vocalizations in Non-human Primates</a></li>
+					<li><a href="../projects.html#4">Identifying Active Extravasation on Arteriograms using Machine
+							Learning</a></li>
+					<li><a href="../projects.html#5">Application of Machine Learning to CT Characterization of Renal Cell
+							Carcinoma</a></li>
+					<li><a href="../projects.html#6">Categorizing Dendritic Spine Morphology</a></li>
+					<li><a href="../projects.html#7">Exploring Error and Model Domains in Materials Machine Learning</a>
+					</li>
+				</ul>
+			<li class="menu__item"><a href="../calendar.html">Calendar</a></li>
+			<li class="menu__item"><a href="../contact.html">Contact</a>
+				<ul id="navSubMenu">
+					<li class="menu__item"><a href="https://wisconsinai.slack.com/">Slack Link</a></li>
+					<li class="menu__item"><a href="mailto:aiclubuwmadison@gmail.com">Email</a></li>
+					<li class="menu__item"><a href="http://eepurl.com/dMyKlQ">Newsletter Sign-up</a></li>
+				</ul>
+			</li>
+		</ul>
+	</div>
+
+	<!-- header -->
+	<div class="head">
+		<h1>AI@UW Blog</h1>
+		<div class="center"><a href="../blog.html"><button class="button button1">Index of Articles</button></a></div>
+	</div>
+
+	<!-- main content -->
+	<div class="main blog">
+		<h2>Fixing an Outdated System: AI in Agriculture</h2>
+		<h4>Jacob Padley- 2/18/20</h4>
+		<p>Initially, when one thinks about artificial intelligence (AI), their mind instantly jumps to robots and other rather cartoonistic based concepts. This is easy for us to do with so many movies/books surrounding it as a topic. But AI has gone a lot further than that. Recently, one of the fastest growing sectors for AI development is agriculture. The global AI agriculture market generated a revenue of $584 million in 2018 and is projected to have an annual growth rate of roughly 38% (PR Newswire). Old-school ways of farming are becoming outdated and leave behind excess pollution in the environment. This culminates with a rapidly growing population in need of more agricultural resources. So, why artificial intelligence as a solution? Incorporating AI with this equipment will maximize the efficiency of current operations. Drones have already been used for irrigation purposes as well as spreading fertilizers. In coming years, I believe we are going to see a hefty shift towards the more sophisticated and updated processes in the fields. Imagine being an elderly farmer who cannot manage his large operations due to health reasons. With AI based systems, it would extend the longevity of his operation and continue to generate income for him and his family. Farming has always been a dangerous profession due to the heavy machinery constantly being used. As AI continues to grow, farming will no longer be dangerous, as robots and drones will handle most of the workload. Couple that with a lower carbon footprint from these electronics with little to no emissions. It honestly makes too much sense for AI to be implemented in the agricultural field. The greatest in-demand application thus far in agriculture is “precision farming,” which allows farmers to optimize their yields from the available acreage. With margins being so important in crop production, any reduction in costs is welcomed. In regards to farming, time is extremely valuable—especially when it’s a larger scale operation with numerous levels and capacities. An example of this is being displayed overseas in China. More than 1,500 square miles of cotton fields can be sprayed at one time using drones (PR Newswire). This would never have been fathomable without the use of AI. The restraints of manpower and time have created a plateau in this industry. Furthering development of agricultural AI will continue to break down these barriers and result in optimizing any scale of operation.
+		<br><br>Sources: <a href="https://finance.yahoo.com/news/ai-opportunities-agriculture-market-2019-173000778.html">https://finance.yahoo.com/news/ai-opportunities-agriculture-market-2019-173000778.html</a>
+		</p>
+		<a href="../blog.html"><button class="button button1 back">Back to Index</button></a>
+		<a href="../blog.html"><button class="button button1 next">Next Post</button></a>
+	</div>
+
+	<!-- Scripts -->
+	<script src="../js/background.js"></script>
+	<script src="../js/menu.js"></script>
+	<script src="../js/sideNav.js"></script>
+
+</body>
+
+</html>

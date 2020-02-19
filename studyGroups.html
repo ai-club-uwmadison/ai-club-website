@@ -27,94 +27,145 @@
 
 <body>
     <!-- menu banner-->
-    <header id="head" class="main-header">
-        <!-- main menu-->
-        <ul class="menuLarge">
-            <li class="menu__item"><a href="about.html">About</a></li>
-            <li class="menu__item"><a href="faq.html">FAQ</a></li>
-            <li class="menu__item"><a href="leadership.html">Leaders</a></li>
-            <li class="menu__item"><a href="roles.html">Join</a></li>
-            <li class="menu__item"><a href="seminars.html">Seminars</a></li>
-            <li class="menu_item" id="menuLogo"><a href="index.html"><img src="images/logo.png" alt="AI@UW Logo"></a>
-                <p style="display:none">AI@UW Logo</p>
-            </li>
-            <li class="menu__item"><a href="studyGroups.html">Study Groups</a></li>
-            <li class="menu__item" data-sub="projects"><a href="projects.html">Projects</a></li>
-            <li class="menu__item"><a href="calendar.html">Calendar</a></li>
-            <li class="menu__item"><a href="contact.html">Contact</a></li>
-        </ul>
-        <!-- mobile freindly menu-->
-        <ul class="menuSmall">
-            <li class="menu_item" id="menuLogoMobile"><a href="index.html"><img src="images/logo.png"></a></li>
-            <li class="menu_item" id="openMenu"><span onclick="openNav()">&#9776;</span></li>
-        </ul>
+	<header id="head" class="main-header">
+		<!-- main menu-->
+		<ul class="menuLarge">
+			<li class="menu__item"><a href="about.html">About</a></li>
+			<li class="menu__item"><a href="faq.html">FAQ</a></li>
+			<li class="menu__item"><a href="leadership.html">Leadership</a></li>
+			<li class="menu__item"><a href="roles.html">Join AI@UW</a></li>
+			<li class="menu__item"><a href="seminars.html">Seminars</a></li>
+			<li class="menu_item" id="menuLogo"><a href="index.html"><img src="images/logo.png" alt="AI@UW Logo"></a>
+				<p style="display:none">AI@UW Logo</p>
+			</li>
+			<li class="menu__item"><a href="studyGroups.html">Study Groups</a></li>
+			<li class="menu__item" data-sub="projects"><a href="projects.html">Projects</a></li>
+			<li class="menu__item"><a href="blog.html">Blog</a></li>
+			<li class="menu__item"><a href="calendar.html">Calendar</a></li>
+			<li class="menu__item"><a href="contact.html">Contact</a></li>
+		</ul>
+		<!-- mobile friendly menu-->
+		<ul class="menuSmall">
+			<li class="menu_item" id="menuLogoMobile"><a href="index.html"><img src="images/logo.png"></a></li>
+			<li class="menu_item" id="openMenu"><span onclick="openNav()">&#9776;</span></li>
+		</ul>
 
-        <!-- menu dropdown-->
-        <div class="dropdown-holder">
-            <div class="dropdown__arrow"></div>
-            <div class="dropdown__bg">
-                <div class="dropdown__bg-bottom"></div>
-            </div>
-            <div class="dropdown__wrap">
-                <div class="dropdown-menu" id="studyGroups">
-                    <div class="dropdown-menu__content">
-                        <div class="top-section">
-                            <div class="col-2">
-                                <ul>
-                                    <h3 class="dropdownTitle">Active Study Groups</h3>
-                                    <ul>
-                                        <!-- <li><a href="studyGroups.html#niagi">Neuro-Inspired Artificial General
-                                                Intelligence</a></li> -->
-                                        <li><a href="studyGroups.html#casg">Causal Architecture Study Group</a></li>
-                                        <li><a href="studyGroups.html#dlsg">Deep Learning Study Group</a></li>
-                                        <li><a href="studyGroups.html#iaisg">Introduction to AI Study Group</a></li>
-                                        <li><a href="studyGroups.html#eaisg">Ethical AI Study Group</a></li>
-                                    </ul>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="bottom-section">
-                        </div>
-                    </div>
-                </div>
-                <div class="dropdown-menu" id="projects" data-sub="projects">
-                    <div class="dropdown-menu__content">
-                        <div class="top-section">
-                            <div class="col-2">
-                                <ul>
-                                    <h3 class="dropdownTitle"><a href="studentProjects.html">Student Run</a></h3>
-                                    <ul>
-                                        <li><a href="studentProjects.html#att">Algorithmic Trading Team</a></li>
-                                        <li><a href="studentProjects.html#eag">Engr-auto Group</a></li>
-                                        <li><a href="studentProjects.html#mt">MelodiCoding Team</a></li>
-                                    </ul>
-                                </ul>
-                                <ul>
-                                    <h3 class="dropdownTitle"><a href="projects.html">Credit/Pay</a></h3>
-                                    <ul>
-                                        <li><a href="projects.html#1">Application of Machine Learning to Analyze
-                                                Molecular Dynamics Simulations</a></li>
-                                        <li><a href="projects.html#2">Exploring the Neural Basis of Consciousness</a>
-                                        </li>
-                                        <li><a href="projects.html#3">Building an Automated Machine Learning Algorithm for Characterization of Anxiety-related Vocalizations in Non-human Primates</a></li>
-                                        <li><a href="projects.html#4">Identifying Active Extravasation on Arteriograms
-                                                using Machine Learning</a></li>
-                                        <li><a href="projects.html#5">Application of Machine Learning to CT
-                                                Characterization of Renal Cell Carcinoma</a></li>
-                                        <li><a href="projects.html#6">Categorizing Dendritic Spine Morphology</a></li>
-                                        <li><a href="projects.html#7">Exploring Error and Model Domains in Materials
-                                                Machine Learning</a></li>
-                                    </ul>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="bottom-section">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+		<!-- menu dropdown-->
+		<div class="dropdown-holder">
+			<div class="dropdown__arrow"></div>
+			<div class="dropdown__bg">
+				<div class="dropdown__bg-bottom"></div>
+			</div>
+			<div class="dropdown__wrap">
+				<div class="dropdown-menu" id="studyGroups">
+					<div class="dropdown-menu__content">
+						<div class="top-section">
+							<div class="col-2">
+								<ul>
+									<h3 class="dropdownTitle">Active Study Groups</h3>
+									<ul>
+										<!-- <li><a href="studyGroups.html#niagi">Neuro-Inspired Artificial General
+												Intelligence</a></li> -->
+										<li><a href="studyGroups.html#casg">Causal Architecture Study Group</a></li>
+										<li><a href="studyGroups.html#dlsg">Deep Learning Study Group</a></li>
+										<li><a href="studyGroups.html#iaisg">Introduction to AI Study Group</a></li>
+										<li><a href="studyGroups.html#eaisg">Ethical AI Study Group</a></li>
+									</ul>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="bottom-section">
+						</div>
+					</div>
+				</div>
+				<div class="dropdown-menu" id="projects" data-sub="projects">
+					<div class="dropdown-menu__content">
+						<div class="top-section">
+							<div class="col-2">
+								<ul>
+									<h3 class="dropdownTitle"><a href="studentProjects.html">Student Run</a></h3>
+									<ul>
+										<li><a href="studentProjects.html#att">Algorithmic Trading Team</a></li>
+										<li><a href="studentProjects.html#eag">Engr-auto Group</a></li>
+										<li><a href="studentProjects.html#mt">MelodiCoding Team</a></li>
+									</ul>
+								</ul>
+								<ul>
+									<h3 class="dropdownTitle"><a href="projects.html">Credit/Pay</a></h3>
+									<ul>
+										<li><a href="projects.html#1">Application of Machine Learning to Analyze
+												Molecular Dynamics Simulations</a></li>
+										<li><a href="projects.html#2">Exploring the Neural Basis of Consciousness</a>
+										</li>
+										<li><a href="projects.html#3">Building an Automated Machine Learning Algorithm for Characterization of Anxiety-related Vocalizations in Non-human Primates</a></li>
+										<li><a href="projects.html#4">Identifying Active Extravasation on Arteriograms
+												using Machine Learning</a></li>
+										<li><a href="projects.html#5">Application of Machine Learning to CT
+												Characterization of Renal Cell Carcinoma</a></li>
+										<li><a href="projects.html#6">Categorizing Dendritic Spine Morphology</a></li>
+										<li><a href="projects.html#7">Exploring Error and Model Domains in Materials
+												Machine Learning</a></li>
+									</ul>
+								</ul>
+							</div>
+						</div>
+						<div class="bottom-section">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+	<!-- mobile friendly side menu-->
+	<div id="mySidenav" class="sidenav">
+		<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+		<ul>
+			<li class="menu__item"><a href="about.html">About</a></li>
+			<li class="menu__item"><a href="faq.html">FAQ</a></li>
+			<li class="menu__item"><a href="blog.html">Blog</a></li>
+			<li class="menu__item"><a href="leadership.html">Leaders</a></li>
+			<li class="menu__item"><a href="roles.html">Get Involved</a></li>
+			<li class="menu__item"><a href="seminars.html">Seminars</a></li>
+			<li class="menu__item"><a href="studyGroups.html">Study Groups</a></li>
+			<ul id="navSubMenu">
+				<!-- <li><a href="studyGroups.html#niagi">Neuro-Inspired Artificial General Intelligence</a></li> -->
+				<li><a href="studyGroups.html#casg">Causal Architecture Study Group:</a></li>
+				<li><a href="studyGroups.html#dlsg">Deep Learning Study Group</a></li>
+				<li><a href="studyGroups.html#iaisg">Introduction to AI Study Group</a></li>
+				<li><a href="studyGroups.html#eaisg">Ethical AI Study Group</a></li>
+			</ul>
+			<li class="menu__item"><a href="studentProjects.html">Projects: Student Run</a>
+				<ul id="navSubMenu">
+					<li><a href="studentProjects.html#att">Algorithmic Trading Team</a></li>
+					<li><a href="studentProjects.html#eag">Engr-auto Group</a></li>
+					<li><a href="studentProjects.html#mt">MelodiCoding Team</a></li>
+				</ul>
+			</li>
+			<li class="menu__item"><a href="projects.html">Projects: Credit/Pay</a>
+				<ul id="navSubMenu">
+					<li><a href="projects.html#1">Application of Machine Learning to Analyze Molecular Dynamics
+							Simulations</a></li>
+					<li><a href="projects.html#2">Exploring the Neural Basis of Consciousness</a></li>
+					<li><a href="projects.html#3">Building an Automated Machine Learning Algorithm for Characterization  of Anxiety-related Vocalizations in Non-human Primates</a></li>
+					<li><a href="projects.html#4">Identifying Active Extravasation on Arteriograms using Machine
+							Learning</a></li>
+					<li><a href="projects.html#5">Application of Machine Learning to CT Characterization of Renal Cell
+							Carcinoma</a></li>
+					<li><a href="projects.html#6">Categorizing Dendritic Spine Morphology</a></li>
+					<li><a href="projects.html#7">Exploring Error and Model Domains in Materials Machine Learning</a>
+					</li>
+				</ul>
+			<li class="menu__item"><a href="calendar.html">Calendar</a></li>
+			<li class="menu__item"><a href="contact.html">Contact</a>
+				<ul id="navSubMenu">
+					<li class="menu__item"><a href="https://wisconsinai.slack.com/">Slack Link</a></li>
+					<li class="menu__item"><a href="mailto:aiclubuwmadison@gmail.com">Email</a></li>
+					<li class="menu__item"><a href="http://eepurl.com/dMyKlQ">Newsletter Sign-up</a></li>
+				</ul>
+			</li>
+		</ul>
+	</div>
     </header>
     <!-- mobile freindly side menu-->
     <div id="mySidenav" class="sidenav">
